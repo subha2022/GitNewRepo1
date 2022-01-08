@@ -6,5 +6,5 @@ public class Browser {
 		// TODO Auto-generated method stub
 System.out.println("i m tested");
 	}
-
+ 
 }
