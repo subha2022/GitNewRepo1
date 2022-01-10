@@ -12,16 +12,18 @@ public class BaseTest1
 	public static WebDriver driver;
 	public static String projectpath = System.getProperty("user.dir");//current project root directory
 	public static Properties p;
+	public static FileInputStream fis;
+		
 	public static void init() throws Exception
 	{
-		FileInputStream fis = new FileInputStream(projectpath+"\\data.properties");
+		fis = new FileInputStream(projectpath+"\\data.properties");
 		p = new Properties();
 		p.load(fis);
 		String value = p.getProperty("firefoxbrowser");
 		System.out.println(value);
+		
 	}
-	
-	
+			
 	public static void luncher(String browser)
 	{
 					
