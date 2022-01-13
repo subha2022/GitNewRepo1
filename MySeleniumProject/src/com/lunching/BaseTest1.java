@@ -13,6 +13,7 @@ public class BaseTest1
 	public static String projectpath = System.getProperty("user.dir");//current project root directory
 	public static Properties p;
 	public static FileInputStream fis;
+	
 		
 	public static void init() throws Exception
 	{
@@ -22,7 +23,7 @@ public class BaseTest1
 		String value = p.getProperty("firefoxbrowser");
 		System.out.println(value);
 		
-	}
+		}
 			
 	public static void luncher(String browser)
 	{
