@@ -5,12 +5,16 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseTest0 {
 	public static WebDriver driver;
@@ -19,6 +23,7 @@ public class BaseTest0 {
 	public static FileInputStream fis;
 	public static Properties mainprop;
 	public static Properties childprop;
+	public static Properties orProp;
 		
 	public static void init() throws Exception
 	{
@@ -42,12 +47,15 @@ public class BaseTest0 {
 		String url = childprop.getProperty("amazonurl");
 		System.out.println(url);
 		
+		fis = new FileInputStream(projectpath+"\\or.properties");
+		orProp = new Properties();
+		orProp.load(fis);
 	}
 			
 	public static void luncher(String browser)
 	{
 					
-		if(p.getProperty(browser).equals("chrome"))
+		if(p.getProperty(browser).equals("chrome")) // for creating userdefined chrome browser
 		{
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\pabitra\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 6");
@@ -61,7 +69,7 @@ public class BaseTest0 {
 			driver = new ChromeDriver(option);
 		}
 				
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(p.getProperty(browser).equals("firefox")) // for creating userdefined firefox browser
 		{
 			ProfilesIni p =new ProfilesIni();
 			FirefoxProfile profile = p.getProfile("Jan2022FF");
@@ -91,21 +99,98 @@ public class BaseTest0 {
 	{
 		driver.get(childprop.getProperty(url));
 	}
-	public static void clickElement(String locator )
+	
+	// for web locator
+	
+	public static void clickElement(String locatorKey )
 	{
-		driver.findElement(By.xpath(locator)).click();
+	//	driver.findElement(By.id(orProp.getProperty(locatorKey))).click();
+		getElement(locatorKey).click();
 	}
 
-	public static void typeText(String locator, String text)
+	
+	public static void typeText(String locatorKey, String text)
 	{
-		driver.findElement(By.name(locator)).sendKeys(text);
+		//driver.findElement(By.name(orProp.getProperty(locatorKey))).sendKeys(text);
+		getElement(locatorKey).sendKeys(text);
 	}
 
-	public static void selectOption(String locator, String option)
+	public static void selectOption(String locatorKey, String option)
 	{
-		driver.findElement(By.id(locator)).sendKeys(option);
+		//driver.findElement(By.xpath(orProp.getProperty(locatorKey))).sendKeys(option);
+		getElement(locatorKey).sendKeys(option);
+	}
+	
+	//for making keys dynamic 
+	
+	
+	public static WebElement getElement(String locatorKey) 
+	{
+	WebElement element = null;
+	
+	//check for element present
+	if(!isElementPresent(locatorKey))
+		// report a failure
+		
+		System.out.println("Element is not present :"+ locatorKey);
+		//driver.findElement()
+	
+		
+		if(locatorKey.endsWith("_id"))
+		{
+			driver.findElement(By.id(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_name"))
+		{
+			driver.findElement(By.name(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_classname"))
+		{
+			driver.findElement(By.className(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_xpath"))
+		{
+			driver.findElement(By.xpath(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_css"))
+		{
+			driver.findElement(By.cssSelector(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_linktext"))
+		{
+			driver.findElement(By.linkText(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_partiallinktext"))
+		{
+			driver.findElement(By.partialLinkText(orProp.getProperty(locatorKey)));
+		}
+		return element;
 	}
 
+	public static boolean isElementPresent(String locatorKey)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		if(locatorKey.endsWith("_id"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.id(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_name"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.name(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_classname"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.className(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_xpath"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_name"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.name(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_name"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.name(orProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_name"))
+		{
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.name(orProp.getProperty(locatorKey))));
+		}
+		
+		return false;
+	}
+
+	
 }
 
 

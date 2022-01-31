@@ -23,6 +23,7 @@ public class BrowserLunching {
 		//FirefoxDriver driver1 = new FirefoxDriver();
 		driver = new FirefoxDriver();
 		driver.navigate().to("https://www.facebook.com");
+		
 
 
 	}

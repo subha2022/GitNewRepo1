@@ -18,11 +18,11 @@ public class TC_005 extends BaseTest0
 		
 		navigateUrl("amazonurl");
 		
-		selectOption("searchDropdownBox","Book");
+		selectOption("amazondropbox_id", "Books");
+				
+		typeText("amazonsearchtextbox_name","Harry Potter");
 		
-		typeText("field-keywords","Harry Potter");
-		
-		clickElement("//input[@id='nav-search-submit-button']");
+		clickElement("amazonsearchbutton_xpath");
 		
 				
 		//driver.findElement(By.id("searchDropdownBox")).sendKeys("Book");
