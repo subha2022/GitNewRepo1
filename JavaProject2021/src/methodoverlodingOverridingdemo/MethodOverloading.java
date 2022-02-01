@@ -1,7 +1,8 @@
 package methodoverlodingOverridingdemo;
 
 public class MethodOverloading {
-	
+
+
 	public void m1(int x) 
 	{
 		System.out.println(x);// if int type is not found it will take next highest primitive type to execute. it will take float

@@ -10,8 +10,11 @@ public class MultiReturn
 
 	public static void main(String[] args) 
 	{
+		MultiReturn mr = new MultiReturn();
+		
+		{ 
 			
-
+		}
 		
 	}	
 	

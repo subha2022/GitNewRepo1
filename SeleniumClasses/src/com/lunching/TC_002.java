@@ -9,12 +9,12 @@ public class TC_002 extends BaseTest1
 	{
 				
 		WebDriverManager.firefoxdriver().setup();
-		init();
 		
+		init();
+
 		luncher("firefoxbrowser");
 		navigateUrl("bestbuyurl");
 	}
 
 }
-
-	
+ 
