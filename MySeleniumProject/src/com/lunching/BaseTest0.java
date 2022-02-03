@@ -3,6 +3,7 @@ package com.lunching;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,6 +51,9 @@ public class BaseTest0 {
 		fis = new FileInputStream(projectpath+"\\or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
+		
+		fis= new FileInputStream(projectpath+"\\log4j.propeties");
+		PropertyConfigurator.configure(fis);
 	}
 			
 	public static void luncher(String browser)
