@@ -17,6 +17,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 public class BaseTest0 {
 	public static WebDriver driver;
 	public static String projectpath = System.getProperty("user.dir");//current project root directory
@@ -25,7 +28,8 @@ public class BaseTest0 {
 	public static Properties mainprop;
 	public static Properties childprop;
 	public static Properties orProp;
-		
+	public static ExtentReports report; //declare html file
+	public static ExtentTest test; 
 	public static void init() throws Exception
 	{
 		fis = new FileInputStream(projectpath+"\\data.properties");
@@ -52,8 +56,10 @@ public class BaseTest0 {
 		orProp = new Properties();
 		orProp.load(fis);
 		
-		fis= new FileInputStream(projectpath+"\\log4j.propeties");
+		fis= new FileInputStream("C:\\Users\\pabitra\\git\\GitNewRepo1\\MySeleniumProject\\log4j.properties");
 		PropertyConfigurator.configure(fis);
+		
+		report = ExtentManager.getInstance(); // html file initialize
 	}
 			
 	public static void luncher(String browser)
