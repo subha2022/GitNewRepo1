@@ -42,12 +42,12 @@ public class BaseTest0 {
 		mainprop = new Properties();
 		mainprop.load(fis);
 		
-		 String e = mainprop.getProperty("env");
-		 System.out.println(e);
+		String e = mainprop.getProperty("env");
+		System.out.println(e);
 		 		
-		 fis = new FileInputStream(projectpath+"\\"+e+".properties");
-		 childprop=new Properties();
-		 childprop.load(fis);
+		fis = new FileInputStream(projectpath+"\\"+e+".properties");
+		childprop=new Properties();
+		childprop.load(fis);
 		 
 		String url = childprop.getProperty("amazonurl");
 		System.out.println(url);
@@ -65,7 +65,7 @@ public class BaseTest0 {
 	public static void luncher(String browser)
 	{
 					
-		if(p.getProperty(browser).equals("chrome")) // for creating userdefined chrome browser
+		if(p.getProperty(browser).equals("chrome")) // for creating user defined chrome browser
 		{
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\pabitra\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 6");
@@ -79,7 +79,7 @@ public class BaseTest0 {
 			driver = new ChromeDriver(option);
 		}
 				
-		else if(p.getProperty(browser).equals("firefox")) // for creating userdefined firefox browser
+		else if(p.getProperty(browser).equals("firefox")) // for creating user defined firefox browser
 		{
 			ProfilesIni p =new ProfilesIni();
 			FirefoxProfile profile = p.getProfile("Jan2022FF");

@@ -5,7 +5,7 @@ public class TypeCastingDemo {
 	public static void main(String[] args) {
 		// byte,short,int,long,float,double,boolean,char
 		
-		/*int x =10;
+	/*	int x =10;
 		System.out.println(x);
 		double y =x;
 		System.out.println(y);*/
