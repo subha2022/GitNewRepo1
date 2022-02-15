@@ -1,10 +1,15 @@
 package com.lunching;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,12 +18,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 public class BaseTest0 {
 	public static WebDriver driver;
@@ -235,6 +242,47 @@ public class BaseTest0 {
 		
 		return by;
 	}
+	// ************ Verifications *****************
+	
+	
+	public static boolean isLinksEqual(String expectedLink)
+	{
+		String actualLink = driver.findElement(By.linkText("Customer Service")).getAttribute("innerHTML");
+		
+		if(actualLink.equals(expectedLink))
+			return true;
+		else
+		return false;
+	}
+	
+	// ********* Reporting *************************
+	
+	
+	public static void reportsuccess(String successMsg) 
+	{
+		test.log(Status.PASS, successMsg);
+	}
+
+	public static void reportfailure(String failureMsg) throws Exception
+	{
+		test.log(Status.FAIL, failureMsg);
+		takeScreenshot();
+	}
+
+	public static void takeScreenshot() throws Exception
+	{
+		Date dt = new Date();
+		System.out.println(dt);
+		String d = dt.toString().replace(':','_').replace(' ', '_');
+		
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(srcFile, new File(projectpath+"//failuarescreenshot//"+d));
+		
+		test.log(Status.INFO, "Screendhot---->" + test.addScreenCaptureFromPath(projectpath+"//failuarescreenshot//"+d));
+	}
+
+
+
 
 	
 }
