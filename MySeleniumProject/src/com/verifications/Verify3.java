@@ -11,7 +11,7 @@ public class Verify3 extends BaseTest0
 	public static void main(String[] args) throws Exception 
 	{
 		WebDriverManager.chromedriver().setup();
-		//WebDriver driver = new ChromeDriver();
+		
 		init();
 		test = report.createTest("Verify3");
 
@@ -20,11 +20,9 @@ public class Verify3 extends BaseTest0
 		
 		navigateUrl("amazonurl");
 		test.log(Status.INFO, "Navigating to application ");
-		
-		
+				
 		driver.manage().window().maximize();
-	//	driver.get("https://www.amazon.in/");
-		
+	
 		String expectedLink = "customer Service";
 		
 		if(!isLinksEqual(expectedLink))
@@ -39,9 +37,4 @@ public class Verify3 extends BaseTest0
 		driver.close();
 	}
 
-	
-
-	
-	
-	
-}
+	}
