@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63828" started-at="2022-02-16T16:28:45Z" finished-at="2022-02-16T16:29:49Z">
+  <suite name="Suite1" duration-ms="39664" started-at="2022-02-17T12:07:13Z" finished-at="2022-02-17T12:07:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63828" started-at="2022-02-16T16:28:45Z" finished-at="2022-02-16T16:29:49Z">
+    <test name="Test1" duration-ms="39664" started-at="2022-02-17T12:07:13Z" finished-at="2022-02-17T12:07:53Z">
+      <class name="com.TestNG.TGN_002">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestNG.TGN_002@604ed9f0]" name="beforeMethod" is-config="true" duration-ms="8261" started-at="2022-02-17T12:07:44Z" finished-at="2022-02-17T12:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.TestNG.TGN_002@604ed9f0]" name="f" duration-ms="332" started-at="2022-02-17T12:07:52Z" finished-at="2022-02-17T12:07:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestNG.TGN_002@604ed9f0]" name="afterMethod" is-config="true" duration-ms="330" started-at="2022-02-17T12:07:53Z" finished-at="2022-02-17T12:07:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.TestNG.TGN_002 -->
       <class name="com.TestNG.TGN_001">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.TestNG.TGN_001@5c3bd550]" name="startProcess" is-config="true" duration-ms="38045" started-at="2022-02-16T21:58:45Z" finished-at="2022-02-16T21:59:23Z">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.TestNG.TGN_001@91161c7]" name="startProcess" is-config="true" duration-ms="15145" started-at="2022-02-17T12:07:13Z" finished-at="2022-02-17T12:07:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.TestNG.TGN_001@5c3bd550]" name="amazon" duration-ms="16962" started-at="2022-02-16T21:59:23Z" finished-at="2022-02-16T21:59:40Z">
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.TestNG.TGN_001@91161c7]" name="amazon" duration-ms="11857" started-at="2022-02-17T12:07:29Z" finished-at="2022-02-17T12:07:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.TestNG.TGN_001@5c3bd550]" name="endProcess" is-config="true" duration-ms="8751" started-at="2022-02-16T21:59:40Z" finished-at="2022-02-16T21:59:49Z">
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.TestNG.TGN_001@91161c7]" name="endProcess" is-config="true" duration-ms="3672" started-at="2022-02-17T12:07:40Z" finished-at="2022-02-17T12:07:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
       </class> <!-- com.TestNG.TGN_001 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>
