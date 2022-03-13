@@ -14,10 +14,11 @@ class Dog extends Animal1
 		System.out.println("BreedName of the Dog : " + BreedName);	
 	}
 }
-public class SingleInheritanceDemo {
+public class SingleInheritanceDemo 
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
 		Animal1 a = new Animal1();
 		a.getName("dog");
 		
