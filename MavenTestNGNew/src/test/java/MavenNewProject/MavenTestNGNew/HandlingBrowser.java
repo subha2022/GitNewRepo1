@@ -29,7 +29,7 @@ public class HandlingBrowser {
 			System.out.println("The Actual link is:"+ actualTitle);
 			System.out.println("The Expected link is:"+ expectedTitle);
 		}
-  
+    
 	}
 
 }
