@@ -1,5 +1,6 @@
 package MavenNewProject.MavenTestNGNew;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,6 +30,8 @@ public class HandlingBrowser {
 			System.out.println("The Actual link is:"+ actualTitle);
 			System.out.println("The Expected link is:"+ expectedTitle);
 		}
+		
+		driver.findElement(By.partialLinkText("DATA SCIENCE")).click();
     
 	}
 
