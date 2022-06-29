@@ -29,12 +29,17 @@ public class HandlingTextBox {
 		{
 			System.out.println("The firstName is enabled");
 			firstName.sendKeys("SUBHA");
+			// Retrieve the entered value from text box
+			
+		String name = firstName.getAttribute("value");
+		System.out.println("The Retrive value of firstname is:"+name);
 			
 		}else
 		{
 			System.out.println("The firstNmae is not enabled");
 		}
 		firstName.clear();
+				
 		Thread.sleep(3000);
 		driver.close();
 		
