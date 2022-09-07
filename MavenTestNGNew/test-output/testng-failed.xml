@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Trade License Depart]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="test.Listeners"/>
-  </listeners>
-  <test thread-count="5" parallel="tests" name="Official Module(failed)">
-    <parameter name="URL" value="Google.com"/>
-    <parameter name="KEY" value="1234"/>
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="test.day3">
+      <class name="TestNGFrameWork.NewTest_001">
         <methods>
-          <include name="loginUser"/>
-          <include name="TestcaseComplete"/>
-          <include name="TestData"/>
-          <include name="BeforeSuite"/>
+          <include name="googleSearch"/>
+          <include name="EndTest"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- test.day3 -->
+      </class> <!-- TestNGFrameWork.NewTest_001 -->
     </classes>
-  </test> <!-- Official Module(failed) -->
-</suite> <!-- Failed suite [Trade License Depart] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

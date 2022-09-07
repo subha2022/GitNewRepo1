@@ -27,8 +27,6 @@ package icici.loans.eduloans;
     VariableTypes obj = new VariableTypes();//here obj is non-prmitive variable or reference variable
     System.out.println(obj.x);
     System.out.println(VariableTypes.cname);
-    obj.m1();
-    m2(); // stati method
 	}
 
 }

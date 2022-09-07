@@ -24,7 +24,6 @@ public class Selfy1
 	File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	
 	FileHandler.copy(srcFile, new File("E:\\ScreenShot Capturing\\amazon.png"));
-	
 
 	}
 
