@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class ParabankkLogin {
+public class ParabankkLogin {     
 
 	@Given("User is able to navigating the login page")
 	public void user_is_able_to_navigating_the_login_page() {
