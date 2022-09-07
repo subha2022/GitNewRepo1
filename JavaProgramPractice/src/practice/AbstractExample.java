@@ -34,7 +34,7 @@ public class AbstractExample extends Parent
 
 	@Override
 	public void student1() {
-		System.out.println(" I am the Existing Studen of Parent Class");
+		System.out.println(" I am the Existing Student of Parent Class");
 		System.out.println("Name of the College: " + CollegeName);
 		System.out.println("Name of the Student: " + Name );
 		System.out.println("Roll No:"+ Rollno);

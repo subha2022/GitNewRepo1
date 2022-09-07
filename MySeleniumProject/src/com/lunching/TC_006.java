@@ -21,7 +21,8 @@ public class TC_006
 		driver.findElement(By.xpath("//span[contains(text(),'MyGlamm LIT Liquid Matte Lipstick (Slow Fade), 3 g - PETA Approved, Cruelty-Free & Vegan')]")).click();
 		Thread.sleep(2000);
 		//driver.findElement(By.xpath("//input[@id='add-to-cart-button'])[1]")).click();
-		//driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();	
+		//driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+		
 		driver.findElement(By.cssSelector("#add-to-cart-button")).click();
 		driver.close();
 		
