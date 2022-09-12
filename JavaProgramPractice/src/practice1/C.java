@@ -13,7 +13,7 @@ public void m3()
 		 C obj3 = new C();
 		 obj3.m3();
 		 obj3.m1();
-		 obj3.m2(); 
+		 obj3.m2();
 		
 	}
 
