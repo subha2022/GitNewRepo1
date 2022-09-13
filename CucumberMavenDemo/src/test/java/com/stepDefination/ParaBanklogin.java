@@ -2,6 +2,7 @@ package com.stepDefination;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.And;
@@ -24,8 +25,8 @@ public class ParaBanklogin
 	@When("enter the user name and password")
 	public void enter_the_user_name_and_password() {
 	    
-		driver.findElement(By.name("username")).sendKeys("automation12345");
-		driver.findElement(By.name("password")).sendKeys("automation12345");
+		driver.findElement(By.name("username")).sendKeys("subhasmita123");
+		driver.findElement(By.name("password")).sendKeys("subhasmita123");
 		
 		 System.out.println("user name and password are entered successfully");
 	}
@@ -66,5 +67,24 @@ public class ParaBanklogin
 	    driver.quit();
 		 System.out.println("The application is closed successfully");
 	}
+	
+	@When("invalid user name and password are entered")
+	public void invalid_user_name_and_password_are_entered() {
+	    
+		driver.findElement(By.name("username")).sendKeys("subha123");
+		driver.findElement(By.name("password")).sendKeys("subha123");
+		
+		 System.out.println("user name and password are entered successfully");
+	}
+	@Then("unable to login")
+	public void unable_to_login() {
+	WebElement erromsg = driver.findElement(By.xpath("//p[contains(@class,'error')]"));
+	String ErrorTxt=erromsg.getText();
+		 System.out.println("unable to login. Display the error message is"+ErrorTxt);
+	}
 
+
+
+
+	
 }
