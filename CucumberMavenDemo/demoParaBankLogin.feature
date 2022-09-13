@@ -5,7 +5,7 @@ Feature: To test the customer login for para bank aplication
     When valid user name and passwordare entered
     And click the login button
     Then display the user homepage
-    Then logout of the application
+    And logout of the application
     And close the url
 
   Scenario: login using invalid credentials
