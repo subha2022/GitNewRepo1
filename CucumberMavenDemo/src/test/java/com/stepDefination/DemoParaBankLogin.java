@@ -67,8 +67,8 @@ public class DemoParaBankLogin {
 	}
 	@When("invalid user name and password are entered")
 	public void invalid_user_name_and_password_are_entered() {
-		driver.findElement(By.name("username")).sendKeys("subha123");
-		driver.findElement(By.name("password")).sendKeys("subha123");
+		driver.findElement(By.name("username")).sendKeys("subh123");
+		driver.findElement(By.name("password")).sendKeys("subh123");
 		
 		 System.out.println("user name and password are entered successfully");
 	}
