@@ -1,6 +1,6 @@
-package tostringdemo;
+package tostringdemoCollection;
 
-public class StringDemo 
+public class StringDemo //collection list demo
 {
 
 	public static void main(String[] args) 

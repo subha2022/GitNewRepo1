@@ -1,4 +1,4 @@
-package tostringdemo;
+package tostringdemoCollection;
 
 public class StringDemo1 
 {
