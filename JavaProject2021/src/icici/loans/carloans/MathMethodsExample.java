@@ -25,6 +25,15 @@ public class MathMethodsExample {
 		
 		int randomNumber=(int) (Math.random() * 1001);
 		System.out.println("Random number is generated btwn 1 to 1000:" +randomNumber);
+		
+		// Integer Parsing= Converting  String to Integer
+		int x = Integer.parseInt("10");
+		System.out.println(x);
+		int y = Integer.parseInt("20");
+		System.out.println(y);
+		
+		System.out.println(x+y);
+		System.out.println("10"+"20");
 	}
 
 }
