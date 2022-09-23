@@ -1,6 +1,6 @@
 package tostringdemoCollection;
 
-public class StringBuiltInMethods {
+public class StringBuiltInMethodsByVinoth {
 
 	public static void main(String[] args) 
 	{

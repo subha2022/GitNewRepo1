@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class MapDemo 
+public class MapDemoByVinoth 
 {
 
 	public static void main(String[] args) 

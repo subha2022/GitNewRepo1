@@ -1,6 +1,6 @@
 package javaDecissionAndLoopdemo;
 
-public class ForLoop {
+public class ForLoopByVinoth {
 
 	public static void main(String[] args)
 	{

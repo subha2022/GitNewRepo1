@@ -1,6 +1,6 @@
 package javaDecissionAndLoopdemo;
 
-public class BreakCountinue {
+public class BreakCountinueByVinoth {
 
 	public static void main(String[] args) 
 	{

@@ -1,6 +1,6 @@
 package javaDecissionAndLoopdemo;
 
-public class WhileLoopExample {
+public class WhileLoopExampleByVinoth {
 
 	public static void main(String[] args) 
 	{

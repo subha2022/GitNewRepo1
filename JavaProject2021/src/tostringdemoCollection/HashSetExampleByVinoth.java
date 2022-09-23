@@ -2,7 +2,7 @@ package tostringdemoCollection;
 
 import java.util.HashSet;
 
-public class HashSetExample {
+public class HashSetExampleByVinoth {
 
 	public static void main(String[] args) {
 		HashSet<String> emp = new HashSet<String>();

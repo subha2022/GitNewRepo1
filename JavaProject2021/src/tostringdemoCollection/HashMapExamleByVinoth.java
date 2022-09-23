@@ -2,7 +2,7 @@ package tostringdemoCollection;
 
 import java.util.HashMap;
 
-public class HashMapExamle {
+public class HashMapExamleByVinoth {
 
 	public static void main(String[] args) 
 	{

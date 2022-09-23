@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ArrayListExample {
+public class ArrayListExampleByVinoth {
 
 	public static void main(String[] args) 
 	{

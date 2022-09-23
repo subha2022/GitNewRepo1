@@ -1,6 +1,6 @@
 package icici.loans.eduloans;
 
-public class InstanceVariable 
+public class InstanceVariableByVinoth 
 {
 	// Instance variable
 			// Employee Details
@@ -18,14 +18,14 @@ public class InstanceVariable
 
 	public static void main(String[] args) 
 	{
-		InstanceVariable empOne = new InstanceVariable();
+		InstanceVariableByVinoth empOne = new InstanceVariableByVinoth();
 		System.out.println(empOne.empNameone);
 		System.out.println(empOne.empID);
 		System.out.println(empOne.empSalary);
 		System.out.println(empOne.empMobileno);
 		System.out.println(empOne.empAddress);
 		
-		InstanceVariable empTwo = new InstanceVariable();
+		InstanceVariableByVinoth empTwo = new InstanceVariableByVinoth();
 		System.out.println(empTwo.empNameTwo);
 		System.out.println(empTwo.empIDtwo);
 		System.out.println(empTwo.empSalarytwo);

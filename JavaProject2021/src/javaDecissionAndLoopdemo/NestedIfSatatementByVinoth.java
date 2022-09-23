@@ -1,6 +1,6 @@
 package javaDecissionAndLoopdemo;
 
-public class NestedIfSatatement {
+public class NestedIfSatatementByVinoth {
 
 	public static void main(String[] args) 
 	{

@@ -28,7 +28,7 @@ package icici.loans.eduloans;
     System.out.println(obj.x);
     System.out.println(VariableTypes.cname);
     obj.m1();
-    m2(); // stati method
+    m2(); // static method
 	}
 
 }

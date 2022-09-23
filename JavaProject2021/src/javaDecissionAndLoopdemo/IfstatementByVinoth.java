@@ -1,10 +1,15 @@
 package javaDecissionAndLoopdemo;
 
-public class Ifstatement {
+import java.util.Scanner;
+
+public class IfstatementByVinoth {
 
 	public static void main(String[] args) 
 	{
-		int age =22;
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the age:");
+		int age = sc.nextInt();
+		
 		if(age>=18) // if the condition is true if statement is executed
 		{
 			System.out.println("This is the major age:"+age);
@@ -16,6 +21,7 @@ public class Ifstatement {
 		
 		
 		System.out.println("******************else if else***********************");
+		
 		
 		int mark = 91;
 		if(mark==35)

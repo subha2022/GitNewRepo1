@@ -1,6 +1,6 @@
 package javaDecissionAndLoopdemo;
 
-public class SwitchStatement {
+public class SwitchStatementByVinoth {
 
 	public static void main(String[] args) 
 	{

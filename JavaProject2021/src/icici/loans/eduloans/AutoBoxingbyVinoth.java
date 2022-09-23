@@ -1,6 +1,6 @@
 package icici.loans.eduloans;
 
-public class AutoBoxing {
+public class AutoBoxingbyVinoth {
 
 	public static void main(String[] args) 
 	{
