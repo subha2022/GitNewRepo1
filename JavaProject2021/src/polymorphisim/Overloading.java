@@ -1,4 +1,4 @@
-package methodoverlodingOverridingdemo;
+package polymorphisim;
 
 public class Overloading {
 	public void m1(int i)

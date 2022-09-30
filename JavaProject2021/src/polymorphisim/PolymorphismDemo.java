@@ -1,4 +1,4 @@
-package icici.loans.eduloans;
+package polymorphisim;
 
 class Bird{
 	
