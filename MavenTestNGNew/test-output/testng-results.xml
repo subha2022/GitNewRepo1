@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Application is lunched]]>
+    </line>
+    <line>
+      <![CDATA[The first Name is :Pabitra]]>
+    </line>
+    <line>
+      <![CDATA[The last Name is :Pradhan]]>
+    </line>
+    <line>
+      <![CDATA[Male radio Button is selected]]>
+    </line>
+    <line>
+      <![CDATA[The Email Id is:pabitra@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[The Verification Number is:89]]>
+    </line>
+    <line>
+      <![CDATA[Submit Button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[The Application is closed]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="174" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
+  <suite name="Default suite" duration-ms="25292" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="174" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-      <class name="com.testNGFramework.TestNGSuite">
-        <test-method status="PASS" signature="lunchApplication()[pri:0, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="lunchApplication" is-config="true" duration-ms="45" started-at="2022-10-06T11:52:59Z" finished-at="2022-10-06T11:53:00Z">
+    <test name="Default test" duration-ms="25292" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:31Z">
+      <class name="com.pageObjectModelTestCases.RegisterUser">
+        <test-method status="PASS" signature="lunchApplication()[pri:1, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="lunchApplication" duration-ms="14929" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:20Z">
           <reporter-output>
+            <line>
+              <![CDATA[Application is lunched]]>
+            </line>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method status="PASS" signature="navigateToRegistrationDemoPage()[pri:1, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="navigateToRegistrationDemoPage" duration-ms="12" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
+        <test-method status="PASS" signature="registerUser()[pri:2, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="registerUser" duration-ms="9756" started-at="2022-10-07T11:28:20Z" finished-at="2022-10-07T11:28:30Z">
           <reporter-output>
+            <line>
+              <![CDATA[The first Name is :Pabitra]]>
+            </line>
+            <line>
+              <![CDATA[The last Name is :Pradhan]]>
+            </line>
+            <line>
+              <![CDATA[Male radio Button is selected]]>
+            </line>
+            <line>
+              <![CDATA[The Email Id is:pabitra@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[The Verification Number is:89]]>
+            </line>
+            <line>
+              <![CDATA[Submit Button is clicked]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- navigateToRegistrationDemoPage -->
-        <test-method status="PASS" signature="registerForDemo()[pri:2, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="registerForDemo" duration-ms="7" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
+        </test-method> <!-- registerUser -->
+        <test-method status="PASS" signature="closeApplication()[pri:3, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="closeApplication" duration-ms="506" started-at="2022-10-07T11:28:30Z" finished-at="2022-10-07T11:28:31Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerForDemo -->
-        <test-method status="PASS" signature="navigateToPythonForDataScience()[pri:3, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="navigateToPythonForDataScience" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToPythonForDataScience -->
-        <test-method status="PASS" signature="navigateToAutomationWindow()[pri:4, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="navigateToAutomationWindow" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToAutomationWindow -->
-        <test-method status="PASS" signature="handelNewBrowserWindow()[pri:5, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelNewBrowserWindow" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelNewBrowserWindow -->
-        <test-method status="PASS" signature="handelNewMessageWindow()[pri:6, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelNewMessageWindow" duration-ms="2" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelNewMessageWindow -->
-        <test-method status="PASS" signature="handelNewTab()[pri:7, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelNewTab" duration-ms="4" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelNewTab -->
-        <test-method status="PASS" signature="navigateToAutomationAlertPopup()[pri:8, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="navigateToAutomationAlertPopup" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToAutomationAlertPopup -->
-        <test-method status="PASS" signature="handelConfirmAlertPopup()[pri:9, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelConfirmAlertPopup" duration-ms="4" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelConfirmAlertPopup -->
-        <test-method status="PASS" signature="handelAlertPopup()[pri:10, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelAlertPopup" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelAlertPopup -->
-        <test-method status="PASS" signature="handelPromptPopUp()[pri:11, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="handelPromptPopUp" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handelPromptPopUp -->
-        <test-method status="PASS" signature="navigateToAutomationTable()[pri:12, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="navigateToAutomationTable" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToAutomationTable -->
-        <test-method status="PASS" signature="extractEmployeeDetails()[pri:13, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="extractEmployeeDetails" duration-ms="3" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extractEmployeeDetails -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.testNGFramework.TestNGSuite@4bec1f0c]" name="closeApplication" is-config="true" duration-ms="1" started-at="2022-10-06T11:53:00Z" finished-at="2022-10-06T11:53:00Z">
-          <reporter-output>
+            <line>
+              <![CDATA[The Application is closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.testNGFramework.TestNGSuite -->
+      </class> <!-- com.pageObjectModelTestCases.RegisterUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

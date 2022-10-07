@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNGFramework.BankingApplicationSoftDependency">
+      <class name="com.pageObjectModelTestCases.RegisterUser">
         <methods>
-          <include name="logOut"/>
-          <include name="loginUser"/>
-          <include name="lunchApplication"/>
-          <include name="checkSavingAccountBalance"/>
-          <include name="checkCurrentAccountBalance"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- com.testNGFramework.BankingApplicationSoftDependency -->
+      </class> <!-- com.pageObjectModelTestCases.RegisterUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
