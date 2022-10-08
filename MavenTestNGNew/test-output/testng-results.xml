@@ -1,73 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
-    <line>
-      <![CDATA[Application is lunched]]>
-    </line>
-    <line>
-      <![CDATA[The first Name is :Pabitra]]>
-    </line>
-    <line>
-      <![CDATA[The last Name is :Pradhan]]>
-    </line>
-    <line>
-      <![CDATA[Male radio Button is selected]]>
-    </line>
-    <line>
-      <![CDATA[The Email Id is:pabitra@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[The Verification Number is:89]]>
-    </line>
-    <line>
-      <![CDATA[Submit Button is clicked]]>
-    </line>
-    <line>
-      <![CDATA[The Application is closed]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25292" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:31Z">
+  <suite name="Default suite" duration-ms="1352" started-at="2022-10-08T15:31:21Z" finished-at="2022-10-08T15:31:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25292" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:31Z">
-      <class name="com.pageObjectModelTestCases.RegisterUser">
-        <test-method status="PASS" signature="lunchApplication()[pri:1, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="lunchApplication" duration-ms="14929" started-at="2022-10-07T11:28:05Z" finished-at="2022-10-07T11:28:20Z">
+    <test name="Default test" duration-ms="1352" started-at="2022-10-08T15:31:21Z" finished-at="2022-10-08T15:31:23Z">
+      <class name="com.testNGFramework.ExtentReport">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.testNGFramework.ExtentReport@20322d26]" name="startReport" is-config="true" duration-ms="557" started-at="2022-10-08T15:31:21Z" finished-at="2022-10-08T15:31:22Z">
           <reporter-output>
-            <line>
-              <![CDATA[Application is lunched]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="informtionTestCase()[pri:1, instance:com.testNGFramework.ExtentReport@20322d26]" name="informtionTestCase" duration-ms="117" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informtionTestCase -->
+        <test-method status="PASS" signature="lunchApplication()[pri:1, instance:com.testNGFramework.ExtentReport@20322d26]" name="lunchApplication" duration-ms="7" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:22Z">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method status="PASS" signature="registerUser()[pri:2, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="registerUser" duration-ms="9756" started-at="2022-10-07T11:28:20Z" finished-at="2022-10-07T11:28:30Z">
+        <test-method status="PASS" signature="failedTestCase()[pri:2, instance:com.testNGFramework.ExtentReport@20322d26]" name="failedTestCase" duration-ms="2" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:22Z">
           <reporter-output>
-            <line>
-              <![CDATA[The first Name is :Pabitra]]>
-            </line>
-            <line>
-              <![CDATA[The last Name is :Pradhan]]>
-            </line>
-            <line>
-              <![CDATA[Male radio Button is selected]]>
-            </line>
-            <line>
-              <![CDATA[The Email Id is:pabitra@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[The Verification Number is:89]]>
-            </line>
-            <line>
-              <![CDATA[Submit Button is clicked]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="closeApplication()[pri:3, instance:com.pageObjectModelTestCases.RegisterUser@1ed4004b]" name="closeApplication" duration-ms="506" started-at="2022-10-07T11:28:30Z" finished-at="2022-10-07T11:28:31Z">
+        </test-method> <!-- failedTestCase -->
+        <test-method status="PASS" signature="warningTestCase()[pri:3, instance:com.testNGFramework.ExtentReport@20322d26]" name="warningTestCase" duration-ms="3" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:22Z">
           <reporter-output>
-            <line>
-              <![CDATA[The Application is closed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.pageObjectModelTestCases.RegisterUser -->
+        </test-method> <!-- warningTestCase -->
+        <test-method status="PASS" signature="skippingTestCase()[pri:4, instance:com.testNGFramework.ExtentReport@20322d26]" name="skippingTestCase" duration-ms="2" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skippingTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testNGFramework.ExtentReport@20322d26]" name="tearDown" is-config="true" duration-ms="614" started-at="2022-10-08T15:31:22Z" finished-at="2022-10-08T15:31:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testNGFramework.ExtentReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
