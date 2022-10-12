@@ -16,7 +16,7 @@ public class HandelingDynamicWebTable {
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		String url = "https://money.rediff.com/gainers/bse/daily/groupa";
-		String compname ="Raymond Ltd";
+		String compname ="City Union Bank";
 		driver.get(url);
 		driver.manage().window().maximize();
 
@@ -59,6 +59,7 @@ public class HandelingDynamicWebTable {
 					System.out.println(groupName);
 					// click on the company name
 					companyNameValue.click();
+					driver.close();
 					
 					break outerloop;
 				}
@@ -68,7 +69,7 @@ public class HandelingDynamicWebTable {
 		
 		}
 
-		driver.close();
+		
 
 	}
 
