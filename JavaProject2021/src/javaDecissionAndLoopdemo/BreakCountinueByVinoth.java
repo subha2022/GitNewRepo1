@@ -11,7 +11,9 @@ public class BreakCountinueByVinoth {
 				break;
 			}
 			System.out.println(num);
+			
 		}
+		System.out.println("*************************");
 		//Continue Statement means it will skip  the code below the continue statement
 				for(int num=1;num<=10;num++)
 				{
