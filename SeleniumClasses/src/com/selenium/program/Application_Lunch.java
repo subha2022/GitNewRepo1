@@ -7,7 +7,7 @@ public class Application_Lunch {
 	public static void main(String[] args)
 	{
 		String url="https://nxtgenaiacademy.com/";
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
