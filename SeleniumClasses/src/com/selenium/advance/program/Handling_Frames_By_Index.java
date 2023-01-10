@@ -20,30 +20,32 @@ public class Handling_Frames_By_Index {
 		// Maximize the window
 		driver.manage().window().maximize();
 		
-		//Active the list Frame
+		/*Active the list Frame
 		driver.switchTo().frame(0);
 		//Click the link
 		driver.findElement(By.linkText("org.openqa.selenium.bidi.log")).click();
 		System.out.println("Selenium bidi is clicked");
 		
 		//Switch back to default content
-		driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();*/
 		
 		//Active the another Frame
 		driver.switchTo().frame(1);
 		
-		//Click the link
+		/*Click the link
 		driver.findElement(By.xpath("/html/body/main/div/section[1]/ul/li[7]/a")).click();
-		System.out.println("Chrome Option link is clicked");
+		System.out.println("Chrome Option link is clicked");*/
 		
-		/*driver.findElement(By.xpath("/html/body/main/ul/li[9]/a/span")).click();
-		System.out.println("Action Option link is clicked");*/
+		driver.findElement(By.linkText("Action")).click();
+		System.out.println("Action Option link is clicked");
+		Thread.sleep(3000);
 		
 		//Switch back to default content
 		driver.switchTo().defaultContent();
 		
 		//Active the another frame
 		driver.switchTo().frame(2);
+		Thread.sleep(3000);
 		
 		//Click the link
 		driver.findElement(By.linkText("TREE")).click();

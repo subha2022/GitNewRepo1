@@ -9,7 +9,7 @@ public class Handling_Frames_By_Name {
 	{
 		String url="https://www.selenium.dev/selenium/docs/api/java/index.html?org/openqa/selenium/package-summary.html";
 		//Set Properties for Chrome Driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver1.exe");
 		
 		// Create object instance for chrome driver
 		ChromeDriver driver = new ChromeDriver();
