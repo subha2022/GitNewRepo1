@@ -10,7 +10,7 @@ public class Handling_PopUp_Alert {
 	{
 		String url="https://nxtgenaiacademy.com/alertandpopup/";
 		//Set property for Chrome driver 
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		//create object instance for chrome driver
 		ChromeDriver driver= new ChromeDriver();
 		//lunch the application

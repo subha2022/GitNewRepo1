@@ -16,8 +16,8 @@ public class AuthenticateCredentials {
 		WebDriver driver = new ChromeDriver();	
 		
 		// Syntax to Authenticate 
-		//String url = "http://admin:admin@websiteurl";
-		
+		//https://username:password@URL 
+				
 		// Url without authenticate 
 		//String url = "http://the-internet.herokuapp.com/basic_auth"; 				
 	
