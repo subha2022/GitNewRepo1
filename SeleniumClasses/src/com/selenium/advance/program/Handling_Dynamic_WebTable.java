@@ -41,7 +41,7 @@ public class Handling_Dynamic_WebTable
 				List<WebElement> columnsTable = companyTable.findElements(By.tagName("td"));
 				//Step-6 Find the total count of the row
 				int columnsCount=columnsTable.size();
-				//Step-7 Nested For Loop - Loop will be executed till the last last cell of the specified column of the table
+				//Step-7 Nested For Loop - Loop will be executed till the last  cell of the specified column of the table
 				for(int column=0;column<columnsCount;column++)
 				{
 					//Step-8 Retrieve all the cell text
