@@ -29,7 +29,7 @@ public class ObjectRepository {
 	public static final String aboutMeLink= "ABOUT ME";
 	public static final String techTalkLink= "TechTalk";
 	public static final String testimonialsLink= "Testimonials";
-	public static final String pythonForDataScienceLink= "DATA SCIENCE";
+	public static final String pythonForDataScienceLink= "Python for ";
 	public static final String pythonLibrariesLink= "PYTHON LIBRARIES";
 	public static final String numpyLink= "NumPy";
 	public static final String pandasLink= "Pandas";

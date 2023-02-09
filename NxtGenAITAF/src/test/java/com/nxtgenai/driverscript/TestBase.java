@@ -45,7 +45,7 @@ public class TestBase {
 		}			
 		else if(config.getProperty("browser").equalsIgnoreCase("chrome"))	
 		{
-			System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver2.exe");	
 			driver = new ChromeDriver();
 		}
 
