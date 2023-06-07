@@ -10,7 +10,7 @@ public class HandelingBrowser {
 	public static void main(String[] args) 
 	{
 		String url="https://itera-qa.azurewebsites.net/home/automation";
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();

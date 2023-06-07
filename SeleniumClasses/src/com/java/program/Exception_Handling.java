@@ -28,7 +28,7 @@ public class Exception_Handling
 			 System.out.println(arr[3]);
 		}catch(ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println("Enter the nowith in the array size");
+			System.out.println("Enter the no with in the array size");
 			System.out.println("The error message is:"+e);
 		}
 		

@@ -10,7 +10,7 @@ public interface BankATM_Interface
 
 	/* public void miniStatement()
 		{
-			System.out.println("Mini Satement is dispalyed");
+			System.out.println("Mini Statement is displayed");
 		}
 	 */ //non static method is not allowed
 }

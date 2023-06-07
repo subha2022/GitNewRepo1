@@ -13,6 +13,9 @@ public class Relatives_AccessModifier extends Self_AccessModifier
 		obj.loanDetails();//Protected access modifier
 		//obj.atmPassword(); //Default access modifier
 		//obj.internetBanking();// This is private access modifier
+		
+		
+		
 
 	}
 

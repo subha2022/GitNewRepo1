@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNGFramework.RegisterDemoFlow">
+      <class name="com.testNGFramework.BankingApplicationAssertOrder">
         <methods>
-          <include name="closeApplication"/>
-          <include name="lunchApplication"/>
-          <include name="registraionForDemoPage"/>
-          <include name="navigateToRegistrationForm"/>
+          <include name="checkSavingAccountBalance"/>
         </methods>
-      </class> <!-- com.testNGFramework.RegisterDemoFlow -->
+      </class> <!-- com.testNGFramework.BankingApplicationAssertOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,29 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55977" started-at="2022-11-09T15:42:38Z" finished-at="2022-11-09T15:43:34Z">
+  <suite name="Default suite" duration-ms="394" started-at="2023-02-24T07:33:08Z" finished-at="2023-02-24T07:33:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55977" started-at="2022-11-09T15:42:38Z" finished-at="2022-11-09T15:43:34Z">
-      <class name="com.testNGFramework.RegisterDemoFlow">
-        <test-method status="PASS" signature="lunchApplication()[pri:0, instance:com.testNGFramework.RegisterDemoFlow@10bdf5e5]" name="lunchApplication" is-config="true" duration-ms="12483" started-at="2022-11-09T15:42:38Z" finished-at="2022-11-09T15:42:50Z">
+    <test name="Default test" duration-ms="394" started-at="2023-02-24T07:33:08Z" finished-at="2023-02-24T07:33:09Z">
+      <class name="com.testNGFramework.BankingApplicationAssertOrder">
+        <test-method status="PASS" signature="lunchApplication()[pri:1, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="lunchApplication" duration-ms="34" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method status="PASS" signature="navigateToRegistrationForm()[pri:1, instance:com.testNGFramework.RegisterDemoFlow@10bdf5e5]" name="navigateToRegistrationForm" duration-ms="25447" started-at="2022-11-09T15:42:50Z" finished-at="2022-11-09T15:43:16Z">
+        <test-method status="PASS" signature="loginUser()[pri:2, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="loginUser" duration-ms="11" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToRegistrationForm -->
-        <test-method status="PASS" signature="registraionForDemoPage()[pri:2, instance:com.testNGFramework.RegisterDemoFlow@10bdf5e5]" name="registraionForDemoPage" duration-ms="17579" started-at="2022-11-09T15:43:16Z" finished-at="2022-11-09T15:43:33Z">
+        </test-method> <!-- loginUser -->
+        <test-method status="FAIL" signature="checkSavingAccountBalance()[pri:3, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="checkSavingAccountBalance" duration-ms="7" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Saving Account] but found [ Not Saving Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Saving Account] but found [ Not Saving Account]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.testNGFramework.BankingApplicationAssertOrder.checkSavingAccountBalance(BankingApplicationAssertOrder.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registraionForDemoPage -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.testNGFramework.RegisterDemoFlow@10bdf5e5]" name="closeApplication" is-config="true" duration-ms="382" started-at="2022-11-09T15:43:33Z" finished-at="2022-11-09T15:43:34Z">
+        </test-method> <!-- checkSavingAccountBalance -->
+        <test-method status="PASS" signature="checkCurrentAccountBalance()[pri:4, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="checkCurrentAccountBalance" duration-ms="3" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCurrentAccountBalance -->
+        <test-method status="PASS" signature="logOut()[pri:5, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="logOut" duration-ms="3" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="closeApplication()[pri:6, instance:com.testNGFramework.BankingApplicationAssertOrder@20322d26]" name="closeApplication" duration-ms="4" started-at="2023-02-24T07:33:09Z" finished-at="2023-02-24T07:33:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.testNGFramework.RegisterDemoFlow -->
+      </class> <!-- com.testNGFramework.BankingApplicationAssertOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

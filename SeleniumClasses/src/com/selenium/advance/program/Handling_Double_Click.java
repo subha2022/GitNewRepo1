@@ -12,7 +12,7 @@ public class Handling_Double_Click {
 		// Storing the application url in the String Variable
 		String url="https://testautomationpractice.blogspot.com/";
 		//Set system property for chrome driver
-		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver2.exe");
+		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
 		//Create object instance for chrome driver
 		ChromeDriver driver = new ChromeDriver();
 		//Lunch the application

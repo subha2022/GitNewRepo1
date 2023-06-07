@@ -17,14 +17,19 @@ public class SoftAssertdemo {
 		driver.get("https://www.amazon.in/");
 		
 	String actualTitle = driver.getTitle();
-	String expectedTitle = "Amazon.in: Amazon Prime";
+	String expectedTitle = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
 		
 		
 		SoftAssert s = new SoftAssert();
 		s.assertEquals(actualTitle, expectedTitle);
+		System.out.println("Both the titles are same");
 		//s.assertTrue(actualTitle.equals(expectedTitle), "Both Titles are not equal...");
 		driver.findElement(By.linkText("Mobiles")).click();
+		System.out.println("Mobiles link is Clicked");
 		s.assertAll();
+		//Close the application
+		driver.close();
+		System.out.println("Application is closed");
 	
 
 

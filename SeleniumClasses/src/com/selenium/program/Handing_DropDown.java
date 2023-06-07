@@ -13,7 +13,7 @@ public class Handing_DropDown {
 		String url="https://itera-qa.azurewebsites.net/home/automation";
 
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

@@ -1,6 +1,4 @@
-package synchronizations;
-
-
+package com.selenium.advance.program;
 
 import java.time.Duration;
 
@@ -8,35 +6,39 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ExplicitWaitExample {
+
+
+public class Explicit_Wait {
 
 	public static void main(String[] args) 
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		// Set property for chrome driver
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
+		//To Create Driver Object in Driver Interface
 		WebDriver driver = new ChromeDriver();
-		String url = "https://demoqa.com/progress-bar";
+		//Store the application link in String variable
+		String url="https://demoqa.com/progress-bar";
+		//Lunch the application
 		driver.get(url);
+		//Maximize the window
 		driver.manage().window().maximize();
-		System.out.println("Parent Browser is opened");
-		
-		// Click on start button
+		//Click on start button
 		driver.findElement(By.id("startStopButton")).click();
+		System.out.println("Start button is clicked");
 		
 		WebElement reset;
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		//Explicit Wait
+		WebDriverWait wait = new WebDriverWait(driver,20);
 		reset = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("resetButton")));
 		
 		reset.click();
 		System.out.println("Reset Button is clicked");
-		
-		
-		
-		//driver.findElement(By.id("resetButton")).click();
+		//Close the application
+		driver.close();
+		System.out.println("Application is closed");
 	}
 
 }

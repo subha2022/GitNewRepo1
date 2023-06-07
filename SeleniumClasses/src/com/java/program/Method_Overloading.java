@@ -3,7 +3,7 @@ package com.java.program;
 public class Method_Overloading 
 {
 	//1. By changing no of argument
-	public static  int multiply(int num1, int num2)
+	public static int  multiply(int num1, int num2)
 	{
 		int result = num1*num2;
 		return result;
@@ -25,6 +25,7 @@ public class Method_Overloading
 
 	public static void main(String[] args) 
 	{
+		
 		System.out.println(multiply(45,78));
 		System.out.println(multiply(45,78,47));
 		System.out.println(multiply(45.4f,47.4f));

@@ -7,11 +7,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class HandelingMultipleBrowser {
 
 	public static void main(String[] args) throws Exception 
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		String url = "https://nxtgenaiacademy.com/multiplewindows/";
 		driver.get(url);
@@ -48,7 +51,7 @@ public class HandelingMultipleBrowser {
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		//click on data science = child window
-		driver.findElement(By.partialLinkText("DATA SCIENCE")).click();
+		driver.findElement(By.linkText("About Me")).click();
 		Thread.sleep(3000);
 		
 		driver.close();
@@ -58,7 +61,7 @@ public class HandelingMultipleBrowser {
 		Thread.sleep(3000);
 		
 		// Click on the Home link in the parent window
-		driver.findElement(By.partialLinkText("HOME")).click();
+		driver.findElement(By.linkText("Home")).click();
 		Thread.sleep(3000);
 		driver.close();
 		System.out.println("Program is Executed successfully ");

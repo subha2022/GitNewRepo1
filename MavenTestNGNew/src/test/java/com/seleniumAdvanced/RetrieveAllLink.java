@@ -7,11 +7,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class RetrieveAllLink {
 
 	public static void main(String[] args)
 	{
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		
+		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		String url = "https://nxtgenaiacademy.com/python/";
 		driver.get(url);

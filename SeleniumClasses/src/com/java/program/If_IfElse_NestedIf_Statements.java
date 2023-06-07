@@ -6,7 +6,7 @@ public class If_IfElse_NestedIf_Statements {
 
 	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner (System.in);
+		/*Scanner sc = new Scanner (System.in);
 		System.out.println("Enter the customer age:");
 		int age = sc.nextInt();
 		if(age>=18)
@@ -15,11 +15,11 @@ public class If_IfElse_NestedIf_Statements {
 		}else
 		{
 			System.out.println("This is minor age");
-		}
+		}*/
 			
 		System.out.println("********************Nested If*********************");
-		int age1=10;
-		int weight=42;
+		int age1=19;
+		int weight=29;
 		if(age1>=18)
 		{
 			if(weight>=45)
