@@ -18,7 +18,18 @@ public class HandlingDate {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		String url = "https://www.makemytrip.com/";
-		String year="2024";
+		//Lunch the application
+				driver.get(url);
+				//Maximize the window
+				driver.manage().window().maximize();
+
+		driver.findElement(By.xpath("//span[contains(text(),'Departure')]")).click();
+		System.out.println("Departure link is clicked.");
+		Thread.sleep(3000);
+		String dateXpath ="(//p[contains(text(),'14')])[1]";
+		driver.findElement(By.xpath(dateXpath)).click();
+		System.out.println("Date is selected");
+		/*String year="2024";
 		String month="May";
 		String date="25";
 		//Lunch the application
@@ -60,10 +71,10 @@ public class HandlingDate {
 		Thread.sleep(3000);
 		selectDay.click();
 		System.out.println("The Day Selected is:"+date);
-	}
+	}*/
 
 
-
+}
 
 
 }

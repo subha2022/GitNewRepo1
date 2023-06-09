@@ -24,6 +24,11 @@ public class Method_Overloading {
 	{
 		System.out.println(x+y);
 	}
+	void sum(Integer x, float y)
+	{
+		System.out.println(x-y);
+	}
+	
 
 	public static void main(String[] args)
 {
@@ -32,6 +37,7 @@ public class Method_Overloading {
 		mo.sum(120, 145);
 		mo.sum(145, 278, 645);
 		mo.sum(25, 14.4f);
+		mo.sum(100, 50);
 				
 	}
 

@@ -41,11 +41,13 @@ public class Handling_Date {
 		System.out.println("The Month selected is:" + monthName);
 
 		// Select the Date
-
-		WebElement selectDepartDay = driver.findElement(By.xpath("//p[contains(text()," + day + ")]"));
+		
+		WebElement selectDepartDay = driver.findElement(By.xpath("//p[contains(text(),'"+day+"')]"));
 		Thread.sleep(3000);
 		selectDepartDay.click();
+		
 		System.out.println("The Date Selected is:" + day);
+		
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -68,6 +70,10 @@ public class Handling_Date {
 		Handling_Date.selectDate(departure, "2024", "March", "7", driver);
 		// Selecting the Return Date
 		Handling_Date.selectDate(returning, "2024", "March", "8", driver);
+		
+		driver.close();
+		
+		System.out.println("Appliation is closed.");
 	}
 
 }
