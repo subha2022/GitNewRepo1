@@ -1,185 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="1" skipped="4">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-09T17:02:22Z" name="Default suite" finished-at="2023-06-09T17:02:23Z" duration-ms="149">
+  <suite started-at="2023-06-13T22:19:12 IST" name="AutomationSuite" finished-at="2023-06-13T22:19:12 IST" duration-ms="189">
     <groups>
+      <group name="Sanity">
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handleNewMessageWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handelNewTab" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handelAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="handelPromptPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-06-09T17:02:22Z" name="Default test" finished-at="2023-06-09T17:02:23Z" duration-ms="149">
-      <class name="com.testNG.Program.Hard_Dependency_TestNG">
-        <test-method signature="lunchApplication()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="lunchApplication" finished-at="2023-06-09T17:02:22Z" duration-ms="28" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Titles are Same expected [Pag Title] but found [Page Title]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Titles are Same expected [Pag Title] but found [Page Title]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.testNG.Program.Hard_Dependency_TestNG.lunchApplication(Hard_Dependency_TestNG.java:12)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2023-06-13T22:19:12 IST" name="NxtGenAIModules" finished-at="2023-06-13T22:19:12 IST" duration-ms="189">
+      <class name="com.TestNg_Methods.NxtGenAi_Suite">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="lunchApplication" finished-at="2023-06-13T22:19:12 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method signature="loginUser()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="loginUser" finished-at="2023-06-09T17:02:22Z" depends-on-methods="com.testNG.Program.Hard_Dependency_TestNG.lunchApplication" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Hard_Dependency_TestNG.loginUser()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Hard_Dependency_TestNG.loginUser()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="navigateToRegisterDemo" finished-at="2023-06-13T22:19:12 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginUser -->
-        <test-method signature="CheckSavingAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="CheckSavingAccountBalance" finished-at="2023-06-09T17:02:22Z" depends-on-methods="com.testNG.Program.Hard_Dependency_TestNG.loginUser" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Hard_Dependency_TestNG.CheckSavingAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Hard_Dependency_TestNG.CheckSavingAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- navigateToRegisterDemo -->
+        <test-method signature="registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="registerForDomo" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckSavingAccountBalance -->
-        <test-method signature="CheckCurrentAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="CheckCurrentAccountBalance" finished-at="2023-06-09T17:02:22Z" depends-on-methods="com.testNG.Program.Hard_Dependency_TestNG.loginUser, com.testNG.Program.Hard_Dependency_TestNG.CheckSavingAccountBalance" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Hard_Dependency_TestNG.CheckCurrentAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Hard_Dependency_TestNG.CheckCurrentAccountBalance()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- registerForDomo -->
+        <test-method signature="navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="navigateToPythonForDataScience" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckCurrentAccountBalance -->
-        <test-method signature="logOut()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="logOut" finished-at="2023-06-09T17:02:22Z" depends-on-methods="com.testNG.Program.Hard_Dependency_TestNG.CheckCurrentAccountBalance" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Hard_Dependency_TestNG.logOut()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Hard_Dependency_TestNG.logOut()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090] depends on not successfully finished methods
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- navigateToPythonForDataScience -->
+        <test-method signature="navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="navigateToAutomationWindow" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method signature="closeApplication()[pri:0, instance:com.testNG.Program.Hard_Dependency_TestNG@4e268090]" started-at="2023-06-09T17:02:22Z" name="closeApplication" finished-at="2023-06-09T17:02:22Z" depends-on-methods="com.testNG.Program.Hard_Dependency_TestNG.logOut" duration-ms="3" status="PASS">
+        </test-method> <!-- navigateToAutomationWindow -->
+        <test-method signature="handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handelNewBrowserWindow" finished-at="2023-06-13T22:19:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handelNewBrowserWindow -->
+        <test-method signature="handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handleNewMessageWindow" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleNewMessageWindow -->
+        <test-method signature="handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handelNewTab" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handelNewTab -->
+        <test-method signature="navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="navigateToAutomationAlertPopUp" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAutomationAlertPopUp -->
+        <test-method signature="handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handleConfirmAlertPopUp" finished-at="2023-06-13T22:19:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleConfirmAlertPopUp -->
+        <test-method signature="handelAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handelAlertPopUp" finished-at="2023-06-13T22:19:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handelAlertPopUp -->
+        <test-method signature="handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="handelPromptPopUp" finished-at="2023-06-13T22:19:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handelPromptPopUp -->
+        <test-method signature="navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="navigateToAUtomationTable" finished-at="2023-06-13T22:19:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAUtomationTable -->
+        <test-method signature="extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="extractEmployeeDetails" finished-at="2023-06-13T22:19:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractEmployeeDetails -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@2dfaea86]" started-at="2023-06-13T22:19:12 IST" name="closeApplication" finished-at="2023-06-13T22:19:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.testNG.Program.Hard_Dependency_TestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.TestNg_Methods.NxtGenAi_Suite -->
+    </test> <!-- NxtGenAIModules -->
+  </suite> <!-- AutomationSuite -->
 </testng-results>

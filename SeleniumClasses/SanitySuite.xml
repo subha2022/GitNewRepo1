@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+	<test thread-count="5" name="NxtGenAIModule">
+		<classes>
+			<class name="com.testNG.Program.Banking_Assert_Validation_TestNg" />
+			<class name="com.testNG.Program.Hard_Dependency_TestNG" />
+			<class name="com.testNG.Program.Soft_Dependency_TestNG" />
+			<class name="com.TestNg_Methods.ScreenNavigation_Method" />
+			<class name="com.TestNg_Methods.ScreenNavigation_Class" />
+		</classes>
+	</test> <!-- NxtGenAIModule -->
+</suite> <!-- AutomationSuite -->
+ 
