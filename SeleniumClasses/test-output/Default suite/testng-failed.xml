@@ -7,7 +7,7 @@
         <methods>
           <include name="lunchApplication"/>
           <include name="closeApplication"/>
-          <include name="handleNewMessageWindow"/>
+          <include name="extractEmployeeDetails"/>
         </methods>
       </class> <!-- com.TestNg_Methods.NxtGenAi_Suite -->
     </classes>

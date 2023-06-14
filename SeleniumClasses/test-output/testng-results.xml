@@ -2,99 +2,99 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T13:21:32 IST" name="Default suite" finished-at="2023-06-14T13:21:42 IST" duration-ms="9686">
+  <suite started-at="2023-06-14T19:28:53 IST" name="Default suite" finished-at="2023-06-14T19:29:08 IST" duration-ms="15292">
     <groups>
       <group name="Sanity">
-        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handleNewMessageWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handelNewTab" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handelAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handelAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="handelPromptPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAutomationWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handelNewBrowserWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handleNewMessageWindow" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handelNewTab" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAutomationAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handelAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handleConfirmAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handleConfirmAlertPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="handelPromptPopUp" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToAUtomationTable" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="extractEmployeeDetails" class="com.TestNg_Methods.NxtGenAi_Suite"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
-        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToRegisterDemo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="registerForDomo" class="com.TestNg_Methods.NxtGenAi_Suite"/>
+        <method signature="NxtGenAi_Suite.navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" name="navigateToPythonForDataScience" class="com.TestNg_Methods.NxtGenAi_Suite"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-06-14T13:21:32 IST" name="Default test" finished-at="2023-06-14T13:21:42 IST" duration-ms="9686">
+    <test started-at="2023-06-14T19:28:53 IST" name="Default test" finished-at="2023-06-14T19:29:08 IST" duration-ms="15292">
       <class name="com.TestNg_Methods.NxtGenAi_Suite">
-        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:22 IST" name="lunchApplication" finished-at="2023-06-14T13:21:32 IST" duration-ms="10339" status="PASS">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:41 IST" name="lunchApplication" finished-at="2023-06-14T19:28:53 IST" duration-ms="11406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method signature="navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:33 IST" name="navigateToRegisterDemo" finished-at="2023-06-14T13:21:33 IST" duration-ms="654" status="PASS">
+        <test-method signature="navigateToRegisterDemo()[pri:1, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:53 IST" name="navigateToRegisterDemo" finished-at="2023-06-14T19:28:53 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToRegisterDemo -->
-        <test-method signature="registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:33 IST" name="registerForDomo" finished-at="2023-06-14T13:21:34 IST" duration-ms="223" status="PASS">
+        <test-method signature="registerForDomo()[pri:2, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:53 IST" name="registerForDomo" finished-at="2023-06-14T19:28:53 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerForDomo -->
-        <test-method signature="navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:34 IST" name="navigateToPythonForDataScience" finished-at="2023-06-14T13:21:34 IST" duration-ms="230" status="PASS">
+        <test-method signature="navigateToPythonForDataScience()[pri:3, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:53 IST" name="navigateToPythonForDataScience" finished-at="2023-06-14T19:28:54 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPythonForDataScience -->
-        <test-method signature="navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:34 IST" name="navigateToAutomationWindow" finished-at="2023-06-14T13:21:35 IST" duration-ms="1326" status="PASS">
+        <test-method signature="navigateToAutomationWindow()[pri:4, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:54 IST" name="navigateToAutomationWindow" finished-at="2023-06-14T19:28:55 IST" duration-ms="1366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAutomationWindow -->
-        <test-method signature="handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:35 IST" name="handelNewBrowserWindow" finished-at="2023-06-14T13:21:39 IST" duration-ms="3651" status="PASS">
+        <test-method signature="handelNewBrowserWindow()[pri:5, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:55 IST" name="handelNewBrowserWindow" finished-at="2023-06-14T19:28:59 IST" duration-ms="3667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handelNewBrowserWindow -->
-        <test-method signature="handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:39 IST" name="handleNewMessageWindow" finished-at="2023-06-14T13:21:40 IST" duration-ms="1651" status="PASS">
+        <test-method signature="handleNewMessageWindow()[pri:6, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:28:59 IST" name="handleNewMessageWindow" finished-at="2023-06-14T19:29:00 IST" duration-ms="1884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleNewMessageWindow -->
-        <test-method signature="handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:40 IST" name="handelNewTab" finished-at="2023-06-14T13:21:42 IST" duration-ms="1658" status="PASS">
+        <test-method signature="handelNewTab()[pri:7, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:01 IST" name="handelNewTab" finished-at="2023-06-14T19:29:02 IST" duration-ms="1801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handelNewTab -->
-        <test-method signature="navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="navigateToAutomationAlertPopUp" finished-at="2023-06-14T13:21:42 IST" duration-ms="3" status="PASS">
+        <test-method signature="navigateToAutomationAlertPopUp()[pri:8, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:02 IST" name="navigateToAutomationAlertPopUp" finished-at="2023-06-14T19:29:04 IST" duration-ms="1919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAutomationAlertPopUp -->
-        <test-method signature="handleConfirmAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="handleConfirmAlertPopUp" finished-at="2023-06-14T13:21:42 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleConfirmAlertPopUp -->
-        <test-method signature="handelAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="handelAlertPopUp" finished-at="2023-06-14T13:21:42 IST" duration-ms="2" status="PASS">
+        <test-method signature="handelAlertPopUp()[pri:9, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:04 IST" name="handelAlertPopUp" finished-at="2023-06-14T19:29:04 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handelAlertPopUp -->
-        <test-method signature="handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="handelPromptPopUp" finished-at="2023-06-14T13:21:42 IST" duration-ms="2" status="PASS">
+        <test-method signature="handleConfirmAlertPopUp()[pri:10, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:04 IST" name="handleConfirmAlertPopUp" finished-at="2023-06-14T19:29:05 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleConfirmAlertPopUp -->
+        <test-method signature="handelPromptPopUp()[pri:11, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:05 IST" name="handelPromptPopUp" finished-at="2023-06-14T19:29:05 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handelPromptPopUp -->
-        <test-method signature="navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="navigateToAUtomationTable" finished-at="2023-06-14T13:21:42 IST" duration-ms="15" status="PASS">
+        <test-method signature="navigateToAUtomationTable()[pri:12, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:05 IST" name="navigateToAUtomationTable" finished-at="2023-06-14T19:29:07 IST" duration-ms="1957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAUtomationTable -->
-        <test-method signature="extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="extractEmployeeDetails" finished-at="2023-06-14T13:21:42 IST" duration-ms="2" status="PASS">
+        <test-method signature="extractEmployeeDetails()[pri:13, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:07 IST" name="extractEmployeeDetails" finished-at="2023-06-14T19:29:08 IST" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extractEmployeeDetails -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@4722ef0c]" started-at="2023-06-14T13:21:42 IST" name="closeApplication" finished-at="2023-06-14T13:21:42 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.TestNg_Methods.NxtGenAi_Suite@48e1f6c7]" started-at="2023-06-14T19:29:08 IST" name="closeApplication" finished-at="2023-06-14T19:29:08 IST" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
