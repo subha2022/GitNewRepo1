@@ -67,10 +67,9 @@ public class NxtGenAi_Suite {
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 4)
 	public void navigateToAutomationWindow() {
-		driver.findElement(By
-				.xpath("(//li[@class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4133\"])[2]"))
+		driver.findElement(By.xpath("(//li[@class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4133\"])[2]"))
 				.click();
-		;
+		
 		System.out.println("Automation Window is Dislayed.");
 	}
 
@@ -144,31 +143,98 @@ public class NxtGenAi_Suite {
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 8)
 	public void navigateToAutomationAlertPopUp() {
+		
+		WebElement demoSite = driver.findElement(By.linkText("Demo Sites"));
+		Actions ac = new Actions(driver);
+		ac.moveToElement(demoSite).perform();
+		System.out.println("Registration Demo is Displayed.");
+		
+		WebElement prcAutomation = driver.findElement(By.linkText("Practice Automation"));
+		ac.moveToElement(prcAutomation).perform();
+		
+		driver.findElement(By.xpath("(//a[contains(@href,'https://nxtgenaiacademy.com/alertandpopup/')])[2]")).click();
 		System.out.println("Alert Popup is Displayed.");
 	}
-
-	@Test(groups = { "Sanity", "Regression" }, priority = 9)
-	public void handleConfirmAlertPopUp() {
-		System.out.println("Confirm Alert PopUp is Handled.");
-	}
-
-	@Test(groups = { "Regression" }, priority = 10)
+	@Test(groups = { "Regression" }, priority = 9)
 	public void handelAlertPopUp() {
+		driver.findElement(By.name("alertbox")).click();
+		driver.switchTo().alert().accept();
 		System.out.println("Alert PopUp is Handled");
 	}
-
+	@Test(groups = { "Sanity", "Regression" }, priority = 10)
+	public void handleConfirmAlertPopUp() throws Exception {
+		
+		WebElement confirmMsg = driver.findElement(By.xpath("//button[contains(@name,'confirmalertbox')]"));
+		confirmMsg.click();
+		//Thread.sleep(3000);
+		String actConfirmMsg = driver.switchTo().alert().getText();
+		System.out.println(actConfirmMsg);
+		driver.switchTo().alert().accept();
+		//Thread.sleep(3000);
+		confirmMsg.click();
+		driver.switchTo().alert().dismiss();
+		System.out.println("Confirm Alert PopUp is Handled.");
+	}
+	
 	@Test(groups = { "Regression" }, priority = 11)
 	public void handelPromptPopUp() {
+		WebElement promptPopUp = driver.findElement(By.name("promptalertbox1234"));
+		promptPopUp.click();
+		String promptMsg = driver.switchTo().alert().getText();
+		System.out.println(promptMsg);
+		driver.switchTo().alert().accept();
+		
+		promptPopUp.click();
+		driver.switchTo().alert().dismiss();
+		
 		System.out.println("Prompt PopUp is Handled.");
 	}
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 12)
 	public void navigateToAUtomationTable() {
+		WebElement demoSite = driver.findElement(By.linkText("Demo Sites"));
+		Actions ac = new Actions(driver);
+		ac.moveToElement(demoSite).perform();
+		System.out.println("Registration Demo is Displayed.");
+		
+		WebElement prcAutomation = driver.findElement(By.linkText("Practice Automation"));
+		ac.moveToElement(prcAutomation).perform();
+		
+		driver.findElement(By.xpath("(//a[contains(text(),'Demo Site – WebTable')])[2]")).click();
 		System.out.println("Automation Table is Displayed.");
 	}
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 13)
 	public void extractEmployeeDetails() {
+		
+		String startXpath="//*[@id=\"main\"]/div[2]/div[1]/div/section[1]/div/div/div/div/div/table/tbody/";
+		WebElement firstName = driver.findElement(By.xpath(startXpath+"tr[1]/td[1]/b"));
+		firstName.getText();
+		System.out.println(firstName);
+		WebElement lastName = driver.findElement(By.xpath(startXpath+"tr[2]/td[1]/b"));
+		lastName.getText();
+		System.out.println(lastName);
+		WebElement gender = driver.findElement(By.xpath(startXpath+"tr[3]/td[1]/b"));
 		System.out.println("Employee Details is Extracted.");
+		gender.getText();
+		System.out.println(gender);
+		WebElement dob = driver.findElement(By.xpath(startXpath+"tr[4]/td[1]/b"));
+		dob.getText();
+		System.out.println(dob);
+		WebElement born = driver.findElement(By.xpath(startXpath+"tr[5]/td[1]/b"));
+		born.getText();
+		System.out.println(born);
+		WebElement title = driver.findElement(By.xpath(startXpath+"tr[6]/td[1]/b"));
+		title.getText();
+		System.out.println(title);
+		WebElement empNo = driver.findElement(By.xpath(startXpath+"tr[7]/td[1]/b"));
+		empNo.getText();
+		System.out.println(empNo);
+		WebElement salary = driver.findElement(By.xpath(startXpath+"tr[8]/td[1]/b"));
+		salary.getText();
+		System.out.println(salary);
+		WebElement emailId = driver.findElement(By.xpath(startXpath+"tr[9]/td[1]/b"));
+		emailId.getText();
+		System.out.println(emailId);
 	}
 }
