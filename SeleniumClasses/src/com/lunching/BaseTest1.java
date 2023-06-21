@@ -38,7 +38,7 @@ public class BaseTest1
 			driver = new FirefoxDriver();
 		}
 	}
-
+ 
 	public static void navigateUrl(String url)
 	{
 		driver.get(p.getProperty(url));
