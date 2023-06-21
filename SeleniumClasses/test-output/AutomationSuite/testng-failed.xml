@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FireFox Browser(failed)">
+    <parameter name="Url" value="https://nxtgenaiacademy.com/"/>
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.TestNg_Methods.RegisterDemoTestNG">
+        <methods>
+          <include name="registerUser"/>
+          <include name="closeApplication"/>
+          <include name="lunchApplication"/>
+          <include name="NavigateToResgisterDemo"/>
+        </methods>
+      </class> <!-- com.TestNg_Methods.RegisterDemoTestNG -->
+    </classes>
+  </test> <!-- FireFox Browser(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
