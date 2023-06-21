@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="NxtGenAIModule(failed)">
+    <classes>
+      <class name="com.testNG.Program.Banking_Assert_Validation_TestNg">
+        <methods>
+          <include name="lunchApplication"/>
+        </methods>
+      </class> <!-- com.testNG.Program.Banking_Assert_Validation_TestNg -->
+      <class name="com.testNG.Program.Hard_Dependency_TestNG">
+        <methods>
+          <include name="loginUser"/>
+          <include name="lunchApplication"/>
+          <include name="CheckSavingAccountBalance"/>
+          <include name="logOut"/>
+          <include name="CheckCurrentAccountBalance"/>
+        </methods>
+      </class> <!-- com.testNG.Program.Hard_Dependency_TestNG -->
+    </classes>
+  </test> <!-- NxtGenAIModule(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
