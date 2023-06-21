@@ -8,49 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">394</td><td></td><td></td></tr>
+<tr><th colspan="7">Trade License Depart</th></tr>
+<tr><td><a href="#t0">Citizen Module</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">83</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Official Module</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">1</td><td class="num">152</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num attn">1</th><th class="num">235</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testNGFramework.BankingApplicationAssertOrder</td><td><a href="#m0">checkSavingAccountBalance</a></td><td rowspan="1">1677223989260</td><td rowspan="1">7</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.testNGFramework.BankingApplicationAssertOrder</td><td><a href="#m1">checkCurrentAccountBalance</a></td><td rowspan="1">1677223989321</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m2">closeApplication</a></td><td rowspan="1">1677223989335</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m3">logOut</a></td><td rowspan="1">1677223989328</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m4">loginUser</a></td><td rowspan="1">1677223989244</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m5">lunchApplication</a></td><td rowspan="1">1677223989202</td><td rowspan="1">34</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Trade License Depart</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Citizen Module &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.day1</td><td><a href="#m0">Apply</a></td><td rowspan="1">1649259865100</td><td rowspan="1">15</td></tr><tr class="passedeven"><td><a href="#m1">GetANumber</a></td><td rowspan="1">1649259865123</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="2">test.day2</td><td><a href="#m2">Download</a></td><td rowspan="1">1649259865129</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m3">Verify</a></td><td rowspan="1">1649259865138</td><td rowspan="1">2</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Official Module &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.day3</td><td><a href="#m4">loginUser</a></td><td rowspan="1">1649259865167</td><td rowspan="1">6</td></tr><tr><th colspan="4">Official Module &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test.day3</td><td><a href="#m5">loginOfficial</a></td><td rowspan="1">1649259865252</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m6">submit</a></td><td rowspan="3">1649259865209</td><td rowspan="3">3</td></tr><tr class="passedeven"><td><a href="#m7">submit</a></td></tr><tr class="passedeven"><td><a href="#m8">submit</a></td></tr><tr class="passedodd"><td rowspan="3">test.day4</td><td><a href="#m9">Taxcollectorlogin</a></td><td rowspan="1">1649259865231</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m10">putInsepctionReport</a></td><td rowspan="1">1649259865237</td><td rowspan="1">3</td></tr><tr class="passedodd"><td><a href="#m11">submitReport</a></td><td rowspan="1">1649259865244</td><td rowspan="1">4</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.testNGFramework.BankingApplicationAssertOrder#checkSavingAccountBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Saving Account] but found [ Not Saving Account]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.testNGFramework.BankingApplicationAssertOrder.checkSavingAccountBalance(BankingApplicationAssertOrder.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testNGFramework.BankingApplicationAssertOrder#checkCurrentAccountBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testNGFramework.BankingApplicationAssertOrder#closeApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.testNGFramework.BankingApplicationAssertOrder#logOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.testNGFramework.BankingApplicationAssertOrder#loginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.testNGFramework.BankingApplicationAssertOrder#lunchApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Citizen Module</h2><h3 id="m0">test.day1#Apply</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.day1#GetANumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.day2#Download</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.day2#Verify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Official Module</h2><h3 id="m4">test.day3#loginUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at test.day3.loginUser(day3.java:21)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.day3#loginOfficial</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.day3#submit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2nd User Name</td><td>2nd Password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.day3#submit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1st User Name</td><td>1st Password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.day3#submit</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>3rd User Name</td><td>3rd Password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test.day4#Taxcollectorlogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test.day4#putInsepctionReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">test.day4#submitReport</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Google.com</td><td>1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

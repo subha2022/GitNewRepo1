@@ -11,9 +11,7 @@ public class FindDuplicateCharacterInString {
 			 			
 		 }
 		 int totalcount= s.length();
-		 System.out.println(totalcount);
 		 int totalcountafter_removea=s.replace("a","").length(); // total length after removing a
-		 System.out.println(totalcountafter_removea);
 		 int totalcountafter_removeb=s.replace("b","").length(); // total length after removing b
 		 int totalcountafter_removec=s.replace("c","").length(); // total length after removing a
 		 int totalcountafter_removed=s.replace("d","").length(); // total length after removing a

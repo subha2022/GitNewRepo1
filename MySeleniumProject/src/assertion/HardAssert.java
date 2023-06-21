@@ -31,7 +31,6 @@ public class HardAssert
 		
 		driver.findElement(By.linkText("Customer Service")).click();
 		driver.quit();
-		System.out.println();
 	}
 
 }

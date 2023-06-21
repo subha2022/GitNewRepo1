@@ -4,16 +4,16 @@ import org.testng.annotations.Test;
 
 public class FirstTestNGScript 
 {
-	@Test(priority=1)
+	@Test
 	public void login()
 	{
 		System.out.println("This statement for login");
 	}
-	@Test(priority=2)
+	@Test
 	public void select()
 	{
 		System.out.println("This statement for select");
-	}@Test(priority=3)
+	}@Test
 	public void logout()
 	{
 		System.out.println("This statement for logout");

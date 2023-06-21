@@ -32,7 +32,6 @@ public class HandlingMultiSelect {
 			languages.selectByIndex(4);
 			//deselecting
 			languages.deselectByVisibleText("Python");
-			System.out.println("Program is executed successfully");
 			
 		}else
 		{
