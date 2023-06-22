@@ -8,7 +8,7 @@ public class Alphabetic_Order
 {
 	
 @Test
-public void lunchApplication() //2nd
+public void lunchApplication() //2nd one
 {
 	System.out.println("Application is Lunched.");
 }
