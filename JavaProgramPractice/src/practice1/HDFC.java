@@ -1,10 +1,6 @@
 package practice1;
- interface RBI
- {
-	 public void withdrawl();
-	 public void deposit();
-	 
- }
+
+import practice.RBI;
 
 public class HDFC implements RBI
 {
@@ -12,23 +8,20 @@ public class HDFC implements RBI
 	public static void main(String[] args) 
 	{
 		HDFC obj = new HDFC();
-		obj.withdrawl();
 		obj.deposit();
-
+		obj.withdrawl();
 	}
 
-	@Override
-	public void withdrawl() 
-	{
-		System.out.println("I am withdrawl method of RBI");
+	public void deposit() {
+		System.out.println("I am Deposit method of RBI");
 		
 	}
 
-	@Override
-	public void deposit() 
-	{
-		System.out.println("I am deposit method of RBI");
+	public void withdrawl() {
+		System.out.println("I am Withdrawl method of RBI");
 		
 	}
+
+	
 
 }
