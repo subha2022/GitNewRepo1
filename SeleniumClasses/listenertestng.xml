@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+<listeners>
+<listener class-name="com.TestNg_Methods.CustomizedListener"></listener>
+</listeners>
+  <test name="ListenerTestCase">
+    <classes>
+      <class name="com.TestNg_Methods.ScreenNavigation_CoustomizeListener"/>
+    </classes>
+  </test> <!-- ListenerTestCase -->
+</suite> <!-- AutomationSuite -->

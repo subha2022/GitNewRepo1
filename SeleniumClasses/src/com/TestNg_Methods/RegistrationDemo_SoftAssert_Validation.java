@@ -1,0 +1,73 @@
+package com.TestNg_Methods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class RegistrationDemo_SoftAssert_Validation {
+	public WebDriver driver;
+	String url = "https://nxtgenaiacademy.com/demo-site/";
+
+	@BeforeClass
+	public void lunchApplication() {
+		// Set the system property for chrome browser
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
+		// Create object instance for chrome driver
+		driver = new ChromeDriver();
+		// Lunch the application
+		driver.get(url);
+		// Maximize the window
+		driver.manage().window().maximize();
+		Reporter.log("Application is lunched");
+
+	}
+
+	@AfterClass(alwaysRun=true)
+	public void closeApplication() {
+		driver.close();
+		Reporter.log("Application is closed");
+
+	}
+	SoftAssert softAssert = new SoftAssert();
+	@Test(priority = 1)
+	public void registerUser() {
+		//Title Verification
+		System.out.println("Title Validation Started");
+		String actualTitle=driver.getTitle();
+		String expectedTitle="Demo  – Registration Form – NxtGen A.I Academy";
+
+		softAssert.assertEquals(actualTitle, expectedTitle , "Titles are not same");
+		
+
+		//First Name Error Msg Verification
+		System.out.println("First Name Error Message Verification");
+		Assert.assertEquals(true, true , "First name error Messages are not same");
+
+		//Last Name Error Msg Verification
+		System.out.println("Last Name Error Message Verification");
+		softAssert.assertEquals(false, true , "Last name error Messages are not same");
+
+		//Gender Error Msg Verification
+		System.out.println("Gender Name Error Message Verification");
+		softAssert.assertEquals(true, true , "Gender name error Messages are not same");
+
+		//EmailId Error Msg Verification
+		System.out.println("EmailId Name Error Message Verification");
+		softAssert.assertEquals(true, true , "EmailId name error Messages are not same");
+
+		//Verification Error Msg Validation
+		System.out.println("Verification Name Error Message Verification");
+		softAssert.assertEquals(false, true , "Verification name error Messages are not same");
+		//Mandatory Step
+		softAssert.assertAll();
+	}
+
+}
