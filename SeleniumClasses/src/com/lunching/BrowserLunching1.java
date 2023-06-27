@@ -24,6 +24,7 @@ public class BrowserLunching1
 		//FirefoxDriver driver1 = new FirefoxDriver();
 		driver = new FirefoxDriver();
 		driver.navigate().to("https://www.facebook.com");
+		System.out.println("Application is lunched");
 
 	}
 
