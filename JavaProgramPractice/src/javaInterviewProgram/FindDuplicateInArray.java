@@ -1,5 +1,7 @@
 package javaInterviewProgram;
 
+import java.util.HashSet;
+
 public class FindDuplicateInArray {
 
 	public static void main(String[] args) 
@@ -15,8 +17,8 @@ public class FindDuplicateInArray {
 		}
 	
 	}
-		}*/
-		
+		}
+		*/
 		String str[] = {"Java","C","C++","Java"};
 		for(int i=0;i<str.length-1;i++)// java ,c c,c++ c++,java
 		{
@@ -28,6 +30,28 @@ public class FindDuplicateInArray {
 				}
 			}
 		}
+		
+		//approach=2
+		
+		/*String str[] = {"Java","C","C++","Java"};
+		
+		HashSet<String>langs = new HashSet();
+		
+		boolean flag = false;
+		
+		for(String l:str)
+		{
+			if(langs.add(l)==false);
+			{
+				System.out.println("Found duplicate element:"+ l);
+				flag=true;
+			}
+		}
+		if(flag==false)
+		{
+			System.out.println("Not found duplicates");
+		}*/
+		
 		
 
 	}
