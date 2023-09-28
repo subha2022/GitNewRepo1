@@ -15,7 +15,7 @@ public class Handling_Multiple_Browsers_Tab
 		String url = "https://nxtgenaiacademy.com/multiplewindows/";
 		// Set System Property for Chrome Browser
 		//WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 
 		//Create instance variable for chrome browser
 		ChromeDriver driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class Handling_Multiple_Browsers_Tab
 		Thread.sleep(3000);
 		
 		//Click the new browser tab
-		driver.findElement(By.linkText("New Browser Tab")).click();
+		driver.findElement(By.name("145newbrowsertab234")).click();
 		System.out.println("New Browser Tab page is opened");
 
 		//Get the window id's

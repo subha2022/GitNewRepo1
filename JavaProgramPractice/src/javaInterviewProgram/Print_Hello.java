@@ -23,7 +23,22 @@ public class Print_Hello {
 		System.out.println();*/
 		
 		String st ="LKJGFHLEUHILO";
-		int len=st.length();
+		char ch1 = st.charAt(5);
+		char ch2 = st.charAt(7);
+		char ch3 = st.charAt(0);
+		char ch4 = st.charAt(11);
+		char ch5 = st.charAt(12);
+		System.out.println("The extracted word is:"+ch1+ch2+ch3+ch4+ch5);
+		
+		//Another program
+		System.out.println("Hi\nHello\nBye");
+		
+		String arr[] = {"Hi","Hello","Bye"};
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
 		
 		
 	}

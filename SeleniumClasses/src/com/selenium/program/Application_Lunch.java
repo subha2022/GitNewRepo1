@@ -26,9 +26,10 @@ public class Application_Lunch {
 		System.out.println("The Application is successfully lunched with Chrome Browser");*/
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
-		driver.navigate().to("https://nxtgenaiacademy.com/multiplewindows/");
+		String url="https://nxtgenaiacademy.com/multiplewindows/";
+		driver.get(url);
 		driver.manage().window().maximize();
-		
+		String pageTitle = driver.getTitle();
 		
 		
 		driver.close();

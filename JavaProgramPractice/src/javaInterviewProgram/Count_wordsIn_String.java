@@ -17,6 +17,7 @@ public class Count_wordsIn_String {
 		{
 			if(
 				(s.charAt(i)==' ') &&(s.charAt(i+1)!=' ')) {
+			//if(s.charAt(i)!=' ') { //this is for counting character without space
 				count++;
 			}
 		}

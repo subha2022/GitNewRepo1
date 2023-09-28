@@ -1,10 +1,23 @@
 package javaInterviewProgram;
 
 public class Java12 {
-
+	
+	private int id;
+	private String name;
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		/* String s = "Subhasmita"; 
+		  char first =s.charAt(0); 
+		  System.out.println(first);
+		  System.out.println(first);*/
+		 
+		
+		
+		  
+		  
+		 
 	}
 
 }
