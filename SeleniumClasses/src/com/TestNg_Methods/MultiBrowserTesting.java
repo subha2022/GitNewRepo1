@@ -10,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class MultiBrowserTesting {
 	
@@ -23,6 +25,7 @@ public class MultiBrowserTesting {
 		if(Browser.equalsIgnoreCase("chrome"))
 		{
 			// Set the system property for chrome browser
+			//WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 			// Create object instance for chrome driver
 			driver = new ChromeDriver();

@@ -6,6 +6,19 @@ public class FindDuplicateInArray {
 
 	public static void main(String[] args) 
 	{
+		int a[] = {100,200,452,100,400,500,100,452};
+		int num=100;
+		int count=0;
+		
+		for(int value:a)
+		{
+			if(value==num)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+				
 		/*int a[] = {1,2,4,5,1,5};
 		for(int i=0;i<a.length-1;i++)//1,1<6-1,2
 		{
@@ -19,7 +32,7 @@ public class FindDuplicateInArray {
 	}
 		}
 		*/
-		String str[] = {"Java","C","C++","Java"};
+		/*String str[] = {"Java","C","C++","Java"};
 		for(int i=0;i<str.length-1;i++)// java ,c c,c++ c++,java
 		{
 			for(int j=i+1;j<str.length;j++) //c,c++ ,c++,java  java
@@ -29,7 +42,7 @@ public class FindDuplicateInArray {
 					System.out.println("The Duplicate String is:" +str[j]);
 				}
 			}
-		}
+		}*/
 		
 		//approach=2
 		

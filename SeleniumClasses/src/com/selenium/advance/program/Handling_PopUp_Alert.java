@@ -8,7 +8,7 @@ public class Handling_PopUp_Alert {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://nxtgenaiacademy.com/alertandpopup/";
+		String url="https://vinothqaacademy.com/alertandpopup/";
 		//Set property for Chrome driver 
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		//create object instance for chrome driver

@@ -5,20 +5,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class HandelingBrowser {
 
 	public static void main(String[] args) 
 	{
-		String url="https://itera-qa.azurewebsites.net/home/automation";
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
-		WebDriver driver = new ChromeDriver();
+		String url="https://nxtgenaiacademy.com/demo-site/";
+		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
 
 		// Validating the text
-		WebElement actText = driver.findElement(By.xpath("//div[@class='jumbotron']/h1[@class='display-3']"));
+		WebElement actText = driver.findElement(By.xpath("//img[contains(@class,'img-responsive logo_transparent_static visible')]"));
 		String actualRes=actText.getText();
-		String expectedRes="Test automation practice form";
+		System.out.println(actualRes);
+		String expectedRes="NxtGen A.I Academy";
 
 		if(actualRes.equals(expectedRes))
 		{

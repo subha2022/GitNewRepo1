@@ -1,4 +1,4 @@
-package TestCases;
+package com.NxtgenAI.TestCases;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +20,7 @@ public class Register_User {
 		//WebDriverManager.chromedriver().setup();
 		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		String url="https://nxtgenaiacademy.com/demo-site/";
+		String url="https://vinothqaacademy.com/demo-site/";
 		driver.get(url);
 		driver.manage().window().maximize();
 		Reporter.log("Application is Lunched");

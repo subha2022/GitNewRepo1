@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Register Demo Test Case</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 15 20:50:53 IST 2023</td>
+<td>Started on:</td><td>Wed Mar 06 20:09:14 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27095 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,73 +76,177 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestNg_Methods.RegisterDemoTestNG.registerUser()'><b>registerUser</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG<br/>
-<a href="#Output-1859823482" onClick='toggleBox("Output-1859823482", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1859823482" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1859823482">
-First Name is dispalyed<br/>
-The First Name value is:Subhasmita<br/>
-Last Name is dispalyed<br/>
-The Last Name value is:Jena<br/>
-Female Radio Button is selected<br/>
-The Street Address is displayed<br/>
-The Street Address Value is:Chansandra<br/>
-The Apartment Address is displayed<br/>
-The Apartment Address value is:Isha Mistry Green<br/>
-The City Address is displayed<br/>
-The City Address Value is:Bangalore<br/>
-The State Address is displayed<br/>
-The State Address Value is:Karnatak<br/>
-The Postal code is displayed<br/>
-The Postal code Value is:560067<br/>
-The Country Address is displayed<br/>
-The Country Value is:India<br/>
-Email Id is displayed<br/>
-The Email Id value is:subhasmitadoll@gmail.com<br/>
-Date is displayed<br/>
-The date value is:2/10/2023<br/>
-Mobile Number is displayed<br/>
-The Mobile Number is:7853860002<br/>
-The Course1 is displayed<br/>
-The Course1 is:Selenium WebDriver<br/>
-The Course1 is displayed<br/>
-The Course1 is:TestNG<br/>
-The Query is displayed<br/>
-The Query Value is:Which Topics are included in Selenium class.<br/>
-Submit Button is enabled<br/>
-Submit Button is clicked<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.TestNg_Methods.RegisterDemoTestNG@6f204a1a</td></tr>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.lunchApplication()'><b>lunchApplication</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1119072377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1119072377'><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1709735955</td>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.TestNg_Methods.RegisterDemoTestNG.validatingSuccessfulMsg()'><b>validatingSuccessfulMsg</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG<br/>
-<a href="#Output-1457417579" onClick='toggleBox("Output-1457417579", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1457417579" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1457417579">
-Both the messages are not same<br/>
-The acutual message is:Registration Form is Successfully Submitted. The Transaction ID : NXTGEN79397		<br/>
-</div>
-</td>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.lunchApplication()'><b>lunchApplication</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
 <td></td>
 <td>0</td>
-<td>com.TestNg_Methods.RegisterDemoTestNG@6f204a1a</td></tr>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
 <tr>
-<td title='com.TestNg_Methods.RegisterDemoTestNG.NavigateToResgisterDemo()'><b>NavigateToResgisterDemo</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG<br/>
-<a href="#Output-454440929" onClick='toggleBox("Output-454440929", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-454440929" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-454440929">
-Register Demo Page is Clicked<br/>
-Navigate to Registration Demo Page<br/>
-</div>
-</td>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.closeApplication()'><b>closeApplication</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
 <td></td>
-<td>2</td>
-<td>com.TestNg_Methods.RegisterDemoTestNG@6f204a1a</td></tr>
+<td>0</td>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.validatingSuccessfulMsg()'><b>validatingSuccessfulMsg</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530880511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530880511'><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
+<tr>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.NavigateToResgisterDemo()'><b>NavigateToResgisterDemo</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1333041165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1333041165'><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
+<tr>
+<td title='com.TestNg_Methods.RegisterDemoTestNG.registerUser()'><b>registerUser</b><br>Test class: com.TestNg_Methods.RegisterDemoTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1470966439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470966439'><pre>org.testng.TestNGException: 
+Parameter &apos;Browser&apos; is required by BeforeClass on method lunchApplication but has not been marked @Optional or defined
+in C:\Users\pabitra\git\GitNewRepo1\SeleniumClasses\RegisterDemotestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.TestNg_Methods.RegisterDemoTestNG@4b8d604b</td></tr>
 </table><p>
 </body>
 </html>

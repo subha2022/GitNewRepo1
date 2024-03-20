@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Capture_ScreenShot {
 
 	public static void main(String[] args) throws IOException {
-		String url = "https://nxtgenaiacademy.com/demo-site/";
+		String url = "https://vinothqaacademy.com/demo-site/";
 		// Set the system property for chrome browser
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		// Create object instance for chrome driver

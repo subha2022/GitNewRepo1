@@ -24,7 +24,7 @@ public class ScreenNavigation_CoustomizeListener {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		String url = "https://nxtgenaiacademy.com/demo-site/";
+		String url = "https://vinothqaacademy.com/";
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("Application is Lunched.");
@@ -57,14 +57,14 @@ public class ScreenNavigation_CoustomizeListener {
 		System.out.println("User is Registered.");
 	}
 
-	@Test(priority=2)
+	@Test(priority=3)
 	public void navigateToAlertAndPopUp() {
 		ScreenNavigation_CoustomizeListener.navigateToRegistrationForm();
 		driver.findElement(By.xpath("(//a[contains(text(),'Demo Site – nAlert and Popup')])[2]")).click();
 		System.out.println("Page Navigate to Alert and PopUp");
 	}
 
-	@Test(priority=3)
+	@Test(priority=4)
 	public void navigateToMultipleWindows() throws InterruptedException {
 		ScreenNavigation_CoustomizeListener.navigateToRegistrationForm();
 		Thread.sleep(3000);
@@ -72,12 +72,12 @@ public class ScreenNavigation_CoustomizeListener {
 		System.out.println("Page Navigate to Multipule Windows");
 	}
 
-	@Test(priority=4)
+	@Test(priority=5)
 	public void navigateToWebTable() {
 		ScreenNavigation_CoustomizeListener.navigateToRegistrationForm();
 		driver.findElement(By.xpath("(//a[contains(text(),'Demo Site – WebTable')])[2]")).click();
 		System.out.println("Page Navigate to WebTable");
-		throw new SkipException("Skipping WebTable Navigation for demo purpose");
+		//throw new SkipException("Skipping WebTable Navigation for demo purpose");
 	}
 
 

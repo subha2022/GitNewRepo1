@@ -30,6 +30,7 @@ public class Application_Lunch {
 		driver.get(url);
 		driver.manage().window().maximize();
 		String pageTitle = driver.getTitle();
+		System.out.println(pageTitle);
 		
 		
 		driver.close();

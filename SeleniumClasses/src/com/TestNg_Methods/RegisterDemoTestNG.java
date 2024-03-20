@@ -2,9 +2,14 @@ package com.TestNg_Methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class RegisterDemoTestNG extends MultiBrowserTesting{
@@ -12,7 +17,7 @@ public class RegisterDemoTestNG extends MultiBrowserTesting{
 	//public WebDriver driver;
 
 	// Parameterized all input value
-	//String url = "https://nxtgenaiacademy.com/";
+	String url = "https://vinothqaacademy.com/";
 	String firstName = "Subhasmita";
 	String lastName = "Jena";
 	String gender = "Female";
@@ -59,7 +64,8 @@ public class RegisterDemoTestNG extends MultiBrowserTesting{
 	String submitNameLoc = "vfb-submit";
 	String regMsgXpath = "//div[contains(@class,'elementor-widget-container')]";
 	
-	/*@BeforeClass
+	
+	@BeforeClass
 	public void lunchApplication() {
 		// Set the system property for chrome browser
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
@@ -77,7 +83,7 @@ public class RegisterDemoTestNG extends MultiBrowserTesting{
 	public void closeApplication() {
 		driver.close();
 		Reporter.log("Application is closed");
-	}*/
+	}
 
 	@Test(priority = 1)
 	public void NavigateToResgisterDemo() {

@@ -1,6 +1,5 @@
 package com.TestNg_Methods;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -64,5 +63,6 @@ public class RegistrationDemo_HardAssert_Validation {
 		System.out.println("Verification Name Error Message Verification");
 		Assert.assertEquals(false, true , "Verification name error Messages are not same");
 	}
+
 
 }

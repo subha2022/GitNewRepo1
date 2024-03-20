@@ -66,7 +66,7 @@ public class ScreenNavigation {
 		System.out.println("Page Navigate to Alert and PopUp");
 	}
 
-	/*@Test(priority=3)
+	@Test(priority=3)
 	public void navigateToMultipleWindows() throws InterruptedException {
 		
 		ScreenNavigation.navigateToRegistrationForm();
@@ -82,7 +82,7 @@ public class ScreenNavigation {
 		driver.findElement(By.xpath("(//a[contains(text(),'Demo Site – WebTable')])[2]")).click();
 		System.out.println("Page Navigate to WebTable");
 		throw new SkipException("Skipping WebTable Navigation for demo purpose");
-	}*/
+	}
 
 
 }
