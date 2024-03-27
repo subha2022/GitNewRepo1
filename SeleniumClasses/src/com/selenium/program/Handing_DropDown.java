@@ -10,10 +10,10 @@ public class Handing_DropDown {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://itera-qa.azurewebsites.net/home/automation";
+		String url="https://vinothqaacademy.com/demo-site/";
 
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();
@@ -24,7 +24,7 @@ public class Handing_DropDown {
 		//Maximize the window
 		driver.manage().window().maximize();
 
-		WebElement dropDown = driver.findElement(By.xpath("//select[@class='custom-select']"));
+		WebElement dropDown = driver.findElement(By.id("vfb-13-country"));
 		//Verify the Select Option Drop Down is Displayed
 		if(dropDown.isDisplayed())
 		{
@@ -45,8 +45,8 @@ public class Handing_DropDown {
 		
 		//Create Select Class object instance
 		Select selectOpt=new Select(dropDown);
-		String listvalueOne="Norway";
-		String listValueTwo="3";
+		String listvalueOne="Afghanistan";
+		String listValueTwo="Albania";
 		
 		if(dropDown.isEnabled())
 		{

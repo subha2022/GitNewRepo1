@@ -11,12 +11,12 @@ public class Handling_TextBox
 	public static void main(String[] args) throws InterruptedException
 	{
 		
-		String url="https://itera-qa.azurewebsites.net/home/automation";
-		String nameId="name";
+		String url="https://vinothqaacademy.com/demo-site/";
+		String nameId="vfb-5";
 		String name="Subhasmita";
 		
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

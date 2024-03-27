@@ -12,10 +12,10 @@ public class Multiple_Select_DropDown {
 
 	public static void main(String[] args)
 	{
-		String url="https://nxtgenaiacademy.com/webtable/";
+		String url="https://vinothqaacademy.com/webtable/";
 
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

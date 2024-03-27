@@ -11,7 +11,7 @@ public class HandelingBrowser {
 
 	public static void main(String[] args) 
 	{
-		String url="https://nxtgenaiacademy.com/demo-site/";
+		String url="https://vinothqaacademy.com/demo-site/";
 		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();

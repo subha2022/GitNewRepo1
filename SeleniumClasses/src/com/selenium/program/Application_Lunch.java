@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Application_Lunch {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		/*String url="https://nxtgenaiacademy.com/";
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
@@ -26,13 +26,33 @@ public class Application_Lunch {
 		System.out.println("The Application is successfully lunched with Chrome Browser");*/
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
-		String url="https://nxtgenaiacademy.com/multiplewindows/";
+		//String url="https://vinothqaacademy.com/multiplewindows/";
+		String url="https://vinothqaacademy.com/demo-site/";
 		driver.get(url);
 		driver.manage().window().maximize();
-		String pageTitle = driver.getTitle();
-		System.out.println(pageTitle);
+		//String pageTitle = driver.getTitle();
+		//System.out.println(pageTitle);
+		String nameid="vfb-5";
+		String name="Subhasmita";
+		WebElement firstName = driver.findElement(By.name("vfb-5"));
+		if(firstName.isDisplayed())
+		{
+			System.out.println("First Name is displayed");
+		}else
+		{
+			System.out.println("First Name is not displayed");
+		}
 		
-		
+		if(firstName.isEnabled())
+		{
+			System.out.println("First Name is enabled");
+			firstName.sendKeys(name);
+		}else
+		{
+			System.out.println("First name is not enabled");
+		}
+		Thread.sleep(3000);
+		firstName.clear();
 		driver.close();
 	
 	}

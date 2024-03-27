@@ -9,11 +9,11 @@ public class Handling_CheckBox {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://itera-qa.azurewebsites.net/home/automation";
-		String weekXpath="//label[@class='form-check-label']/input[@id='thursday']";
+		String url="https://vinothqaacademy.com/demo-site/";
+		String testNGXpath="vfb-20[]";
 		
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();
@@ -25,47 +25,47 @@ public class Handling_CheckBox {
 		driver.manage().window().maximize();
 
 		//Declaring the web element object
-		WebElement thrusdayCheckBox = driver.findElement(By.xpath(weekXpath));
+		WebElement testNGCheckBox = driver.findElement(By.name(testNGXpath));
 
-		//Verify the Thursday Check Box is displayed
-		if(thrusdayCheckBox.isDisplayed())
+		//Verify the testNG Check Box is displayed
+		if(testNGCheckBox.isDisplayed())
 		{
-			System.out.println("Thursday Check Box is Displayed");
+			System.out.println("testNG Check Box is Displayed");
 		}else
 		{
-			System.out.println("Thursday Check Box is not Displayed");
+			System.out.println("testNG Check Box is not Displayed");
 		}
-		//Verify the Thursday Check Box is enabled 
-		if(thrusdayCheckBox.isEnabled())
+		//Verify the testNG Check Box is enabled 
+		if(testNGCheckBox.isEnabled())
 		{
-			System.out.println("Thursday Check Box is enabled");	 
+			System.out.println("testNG Check Box is enabled");	 
 		}
 		else
 		{
-			System.out.println("Thursday Check Box is enabled");
+			System.out.println("testNG Check Box is enabled");
 		}
 		Thread.sleep(3000);
 
-		//Verify the Thursday Check Box is Selected
-		if(thrusdayCheckBox.isSelected())
+		//Verify the testNG Check Box is Selected
+		if(testNGCheckBox.isSelected())
 		{
-			System.out.println("Thursday Check Box is Selected");
+			System.out.println("testNG Check Box is Selected");
 		}
 		else
 		{
-			System.out.println("Thursday Check Box is not Selected");
+			System.out.println("testNG Check Box is not Selected");
 			//click Check Box Button
-			thrusdayCheckBox.click();
+			testNGCheckBox.click();
 		}
 		
-		//Verify the Thursday Check Box is Selected 
-		if(thrusdayCheckBox.isSelected())
+		//Verify the testNG Check Box is Selected 
+		if(testNGCheckBox.isSelected())
 		{
-			System.out.println("Thursday Check Box is Selected");
+			System.out.println("testNG Check Box is Selected");
 		}
 		else
 		{
-			System.out.println("Thursday Check Box is not Selected");
+			System.out.println("testNG Check Box is not Selected");
 		}
 
 		Thread.sleep(3000);

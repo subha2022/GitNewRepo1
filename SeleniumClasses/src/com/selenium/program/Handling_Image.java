@@ -9,11 +9,11 @@ public class Handling_Image {
 
 	public static void main(String[] args)
 	{
-		String url="https://www.saucedemo.com/";
-		String imageXpath="//div[@class='bot_column']";
+		String url="https://vinothqaacademy.com/demo-site/";
+		String imageXpath="//img[@alt='Automation']";
 		
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();
@@ -36,7 +36,7 @@ public class Handling_Image {
 		}
 		
 		//Verify the Logo is displayed
-		WebElement pageLogo = driver.findElement(By.xpath("//div[@class='login_logo']"));
+		WebElement pageLogo = driver.findElement(By.xpath("//img[@alt='Vinoth Q.A Academy']"));
 		
 		if(pageLogo.isDisplayed())
 		{

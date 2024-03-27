@@ -9,11 +9,11 @@ public class Handling_RadioButton {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://itera-qa.azurewebsites.net/home/automation";
-		String femaleId="female";
+		String url="https://vinothqaacademy.com/demo-site/";
+		String femaleId="vfb-31-2";
 		
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

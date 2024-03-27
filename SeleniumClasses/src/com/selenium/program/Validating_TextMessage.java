@@ -9,10 +9,10 @@ public class Validating_TextMessage {
 
 	public static void main(String[] args)
 	{
-		String url="https://nxtgenaiacademy.com/demo-site/";
+		String url="https://vinothqaacademy.com/demo-site/";
 				
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

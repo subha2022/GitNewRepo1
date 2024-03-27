@@ -8,13 +8,13 @@ public class Handling_Browser_Navigation {
 
 	public static void main(String[] args)
 	{
-		String url="https://itera-qa.azurewebsites.net/home/automation";
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+		String url="https://vinothqaacademy.com/demo-site/";
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.linkText("Practice")).click();
+		driver.findElement(By.name("vfb-submit")).click();
 		driver.navigate().back();
 		driver.navigate().forward();
 		driver.navigate().refresh();
