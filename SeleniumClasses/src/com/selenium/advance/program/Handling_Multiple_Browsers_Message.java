@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class Handling_Multiple_Browsers_Message 
 {
@@ -13,7 +14,7 @@ public class Handling_Multiple_Browsers_Message
 	public static void main(String[] args) throws InterruptedException 
 	{
 		//Storing the url in String
-		String url = "https://nxtgenaiacademy.com/multiplewindows/";
+		String url = "https://vinothqaacademy.com/multiplewindows/";
 		//Set the system property for Chrome Driver
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		//Create instance variable for Chrome Driver
@@ -27,7 +28,7 @@ public class Handling_Multiple_Browsers_Message
 		Thread.sleep(3000);
 
 		//Click the New Message Window Tab 
-		WebElement newMsgWindow = driver.findElement(By.name("newmessagewindow321"));
+		WebElement newMsgWindow = driver.findElement(By.name("123newmessagewindow321"));
 		newMsgWindow.click();
 		System.out.println("New Message Window is opened");
 
@@ -52,9 +53,17 @@ public class Handling_Multiple_Browsers_Message
 		driver.switchTo().window(homePage);
 		System.out.println("Parent Window is activated");
 		Thread.sleep(3000);
-		//Click Free Automation Courses link in the parent window
-		driver.findElement(By.linkText("Free Automation Courses")).click();
-		System.out.println("Free Automation Courses page is opened");
+		//Click Free Youtube Courses link in the parent window
+		Actions ac = new Actions(driver);
+		WebElement freeyoutubeCoursesLink = driver.findElement(By.linkText("Free YouTube Courses"));
+		ac.moveToElement(freeyoutubeCoursesLink).perform();
+		System.out.println("Free YouTube Courses link is mouse overed");
+		Thread.sleep(3000);
+		WebElement freeqavideoCoursesLink = driver.findElement(By.xpath("(//a[text()='Free QA Video Courses'])[2]"));
+		ac.moveToElement(freeqavideoCoursesLink).perform();
+		System.out.println("Free QA Video Courses link is mouse overed");
+		driver.findElement(By.linkText("Manual Testing")).click();
+		System.out.println("Manual Testing page is opened");
 		Thread.sleep(3000);
 		//Close the application
 		driver.close();

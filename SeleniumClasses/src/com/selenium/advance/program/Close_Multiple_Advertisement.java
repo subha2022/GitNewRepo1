@@ -11,7 +11,7 @@ public class Close_Multiple_Advertisement {
 	public static void main(String[] args) throws InterruptedException
 	{
 		// Set the system property for the chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		//Creating instance of Chrome driver
 		ChromeDriver driver = new ChromeDriver();	

@@ -25,7 +25,7 @@ public class NxtGenAi_Suite {
 		driver = new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		String url = "https://nxtgenaiacademy.com/demo-site/";
+		String url = "https://vinothqaacademy.com/";
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("Application is Lunched.");
@@ -58,11 +58,11 @@ public class NxtGenAi_Suite {
 	}
 
 	@Test(groups = { "Smoke", "Sanity", "Regression" }, priority = 3)
-	public void navigateToPythonForDataScience() {
+	public void navigateToSeleniumOnlineTraining() {
 		 ac = new Actions(driver);
-		WebElement pythonForAutomation = driver.findElement(By.linkText("Python for Automation"));
+		WebElement pythonForAutomation = driver.findElement(By.linkText("Selenium Online Training"));
 		ac.moveToElement(pythonForAutomation).perform();
-		System.out.println("Python for Data Science Page is Displayed.");
+		System.out.println("Selenium Online Training page is Displayed.");
 	}
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 4)
@@ -78,17 +78,16 @@ public class NxtGenAi_Suite {
 		NxtGenAi_Suite.navigateToRegisterDemo();
 		
 		
-		driver.findElement(By.xpath("(//a[contains(@href,'https://nxtgenaiacademy.com/alertandpopup/')])[2]")).click();
-		System.out.println("Alert Popup is Displayed.");
-		driver.findElement(By.xpath("(//li[@class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-4133\"])[2]"))
-				.click();
+		//driver.findElement(By.xpath("(//a[contains(@href,'https://nxtgenaiacademy.com/alertandpopup/')])[2]")).click();
+		//System.out.println("Alert Popup is Displayed.");
+		driver.findElement(By.linkText("(Demo Site – Multiple Windows")).click();				
 		
 		System.out.println("Automation Window is Dislayed.");
 	}
 
 	@Test(groups = { "Sanity", "Regression" }, priority = 5)
 	public void handelNewBrowserWindow() {
-		driver.findElement(By.xpath("//*[@id=\"button1\"]")).click();
+		driver.findElement(By.linkText("New Browser Window")).click();
 		// Get window's Id's
 		Set<String> WindowId = driver.getWindowHandles();
 		Iterator<String> Iterator = WindowId.iterator();
@@ -113,7 +112,7 @@ public class NxtGenAi_Suite {
 
 	@Test(groups = { "Regression" }, priority = 6)
 	public void handleNewMessageWindow() {
-		driver.findElement(By.xpath("//*[@id=\"button1\"]")).click();
+		driver.findElement(By.linkText("New Message Window")).click();
 		// Get Windows Id's
 		Set<String> windowsId = driver.getWindowHandles();
 		Iterator<String> Iterator = windowsId.iterator();
@@ -135,7 +134,7 @@ public class NxtGenAi_Suite {
 
 	@Test(groups = { "Regression" }, priority = 7)
 	public void handelNewTab() {
-		driver.findElement(By.name("145newbrowsertab234")).click();
+		driver.findElement(By.linkText("New Browser Tab")).click();
 		//Get Windows Id's
 		Set<String> windowId = driver.getWindowHandles();
 		Iterator<String>Iterator =windowId.iterator();
@@ -165,19 +164,19 @@ public class NxtGenAi_Suite {
 		WebElement prcAutomation = driver.findElement(By.linkText("Practice Automation"));
 		ac.moveToElement(prcAutomation).perform();
 		
-		driver.findElement(By.xpath("(//a[contains(@href,'https://nxtgenaiacademy.com/alertandpopup/')])[2]")).click();
+		driver.findElement(By.linkText("Demo Site – Alert and Popup")).click();
 		System.out.println("Alert Popup is Displayed.");
 	}
 	@Test(groups = { "Regression" }, priority = 9)
 	public void handelAlertPopUp() {
 		driver.findElement(By.name("alertbox")).click();
-		driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept()	;
 		System.out.println("Alert PopUp is Handled");
 	}
 	@Test(groups = { "Sanity", "Regression" }, priority = 10)
 	public void handleConfirmAlertPopUp() throws Exception {
 		
-		WebElement confirmMsg = driver.findElement(By.xpath("//button[contains(@name,'confirmalertbox')]"));
+		WebElement confirmMsg = driver.findElement(By.name("confirmalertbox"));
 		confirmMsg.click();
 		//Thread.sleep(3000);
 		String actConfirmMsg = driver.switchTo().alert().getText();

@@ -36,7 +36,7 @@ public class Soft_Dependency_TestNG
 		Assert.assertEquals("LogOut", "LogOut");
 	}
 
-	@Test(dependsOnMethods= {"logOut"})
+	@Test(dependsOnMethods= {"logOut"},alwaysRun=true)
 	public void closeApplication() {
 		System.out.println("Applicaion is Closed");
 		Assert.assertEquals("Closed", "Closed");

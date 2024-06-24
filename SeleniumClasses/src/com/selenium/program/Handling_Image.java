@@ -13,7 +13,7 @@ public class Handling_Image {
 		String imageXpath="//img[@alt='Automation']";
 		
 		//set properties for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		
 		// create instance for Chrome driver
 		WebDriver driver = new ChromeDriver();

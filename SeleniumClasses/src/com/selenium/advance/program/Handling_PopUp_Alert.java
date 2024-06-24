@@ -1,18 +1,24 @@
 package com.selenium.advance.program;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Handling_PopUp_Alert {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://vinothqaacademy.com/alertandpopup/";
+		String url="https://vinothqaacademy.com/alert-and-popup/";
 		//Set property for Chrome driver 
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 		//create object instance for chrome driver
-		ChromeDriver driver= new ChromeDriver();
+		WebDriver driver= new ChromeDriver();
+		
+		WebDriverWait myWait = new WebDriverWait(driver,10);
+		
 		//lunch the application
 		driver.navigate().to(url);
 		//Maximize the window
@@ -69,6 +75,21 @@ public class Handling_PopUp_Alert {
 		//click on cancel button
 		driver.switchTo().alert().dismiss();
 		Thread.sleep(3000);
+		
+		/* //handle alert without using switchTo.alert(), use explicit wait
+		//1.Handling the AlertBox
+				WebElement alertBox1 = driver.findElement(By.name("alertbox"));
+				//Click the alert box
+				alertBox1.click();
+				System.out.println("Alert Box is clicked");
+				Thread.sleep(3000);
+				Alert myAlert = myWait.until(ExpectedConditions.alertIsPresent());
+				
+				System.out.println(myAlert.getText());
+				
+				//click on ok button 
+				myAlert.accept();
+				Thread.sleep(3000);*/
 		
 		//Close the application
 		driver.close();

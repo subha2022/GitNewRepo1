@@ -4,7 +4,9 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class Handling_Multiple_Browsers_Tab 
 {
@@ -12,7 +14,7 @@ public class Handling_Multiple_Browsers_Tab
 	public static void main(String[] args) throws InterruptedException 
 	{
 		//Save the application in String
-		String url = "https://nxtgenaiacademy.com/multiplewindows/";
+		String url = "https://vinothqaacademy.com/multiplewindows/";
 		// Set System Property for Chrome Browser
 		//WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
@@ -51,8 +53,16 @@ public class Handling_Multiple_Browsers_Tab
 		//Maximize the child window
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
+		
 		//Click on the About Me in the child window
-		driver.findElement(By.linkText("About Me")).click();
+		Actions ac = new Actions(driver);
+		
+		WebElement aboutmeLink = driver.findElement(By.linkText("About Me"));
+		ac.moveToElement(aboutmeLink).perform();
+		Thread.sleep(3000);
+		WebElement linkedinLink = driver.findElement(By.linkText("LinkedIn Profile")) ;
+		linkedinLink.click();
+		
 		System.out.println("About Me page is opened");
 		Thread.sleep(3000);
 		
@@ -63,9 +73,9 @@ public class Handling_Multiple_Browsers_Tab
 		driver.switchTo().window(homePage);
 		System.out.println("Parent window is activated");
 		Thread.sleep(3000);
-		//Click on the Course Offered Tab in the parent window
-		driver.findElement(By.linkText("Course Offered"));
-		System.out.println("Course Offered Page is opened");
+		//Click on the Home tab in the parent window
+		driver.findElement(By.linkText("Home"));
+		System.out.println("Home Page is opened");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		//Close the application

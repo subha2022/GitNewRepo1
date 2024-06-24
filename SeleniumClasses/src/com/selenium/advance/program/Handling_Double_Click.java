@@ -10,9 +10,9 @@ public class Handling_Double_Click {
 	public static void main(String[] args) throws InterruptedException
 	{
 		// Storing the application url in the String Variable
-		String url="https://testautomationpractice.blogspot.com/";
+		String url="	";
 		//Set system property for chrome driver
-		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver2.exe");
 		//Create object instance for chrome driver
 		ChromeDriver driver = new ChromeDriver();
 		//Lunch the application

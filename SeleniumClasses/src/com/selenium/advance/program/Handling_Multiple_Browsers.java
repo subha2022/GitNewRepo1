@@ -13,10 +13,10 @@ public class Handling_Multiple_Browsers
 	public static void main(String[] args) throws InterruptedException
 	{
 		//Save the application in String
-		String url = "https://nxtgenaiacademy.com/multiplewindows/";
+		String url = "https://vinothqaacademy.com/multiplewindows/";
 		// Set System Property for Chrome Browser
 		//WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver2.exe");
 		
 		//Create instance variable for chrome browser
 		ChromeDriver driver = new ChromeDriver();
@@ -58,9 +58,9 @@ public class Handling_Multiple_Browsers
 		
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		//Click the python for automation in the child page
-		driver.findElement(By.linkText("Python for Automation")).click();
-		System.out.println("Python for Automation page is opened");
+		//Click the Selenium Online Training in the child page
+		driver.findElement(By.linkText("Selenium Online Training")).click();
+		System.out.println("Selenium Online Training page is opened");
 		
 		Thread.sleep(3000);
 		//Close the Child Window
@@ -72,9 +72,9 @@ public class Handling_Multiple_Browsers
 		
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		//click on the Course Offered  tab  in the parent page
-		driver.findElement(By.linkText("Course Offered")).click();
-		System.out.println("Course Offered page is opened");
+		//click on the Home tab  in the parent page
+		driver.findElement(By.linkText("Home")).click();
+		System.out.println("Home page is opened");
 		Thread.sleep(3000);
 		//Close the application
 		driver.close();

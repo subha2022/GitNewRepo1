@@ -9,7 +9,7 @@ public class HandlingMouseOver {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		String url="https://nxtgenaiacademy.com/";
+		String url="https://vinothqaacademy.com/";
 		// Set properties for Firefox driver
 		System.setProperty("webdriver.gecko.driver", ".\\Drivers\\geckodriver.exe");
 		//Create object instance for Firefox Driver
@@ -34,7 +34,7 @@ public class HandlingMouseOver {
 		Thread.sleep(3000);
 		
 		//Click Registration Form
-		driver.findElement(By.linkText("Demo Site – Registration Form")).click();
+		driver.findElement(By.linkText("Demo Site â€“ Registration Form")).click();
 		
 		Thread.sleep(3000);
 		

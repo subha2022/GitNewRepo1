@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNg_Methods.ScreenNavigation_CoustomizeListener">
+      <class name="com.TestNg_Methods.NxtGenAi_Suite">
         <methods>
-          <include name="navigateToAlertAndPopUp"/>
           <include name="lunchApplication"/>
           <include name="closeApplication"/>
+          <include name="handelNewBrowserWindow"/>
+          <include name="navigateToAutomationWindow"/>
+          <include name="handleNewMessageWindow"/>
+          <include name="handelNewTab"/>
         </methods>
-      </class> <!-- com.TestNg_Methods.ScreenNavigation_CoustomizeListener -->
+      </class> <!-- com.TestNg_Methods.NxtGenAi_Suite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
